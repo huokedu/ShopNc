@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <View style="@style/View.Line8" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="编号" />
+
+        <View style="@style/View.LineHor" />
+
+        <TextView
+            android:id="@+id/idTextView"
+            style="@style/EditText.EditInfo"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        android:id="@+id/shipLinearLayout"
+        style="@style/Layout.Tool"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="运费" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/shipEditText"
+            style="@style/EditText.EditInfo"
+            android:gravity="center_vertical"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="价格" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/priceEditText"
+            style="@style/EditText.EditInfo"
+            android:gravity="center_vertical"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line8" />
+
+    <TextView
+        android:id="@+id/modifyTextView"
+        style="@style/TextView.Button1"
+        android:layout_margin="0dip"
+        android:text="修 改" />
+
+</LinearLayout>

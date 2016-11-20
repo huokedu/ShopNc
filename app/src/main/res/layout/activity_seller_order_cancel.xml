@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <View style="@style/View.Line8" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="编号" />
+
+        <View style="@style/View.LineHor" />
+
+        <TextView
+            android:id="@+id/idTextView"
+            style="@style/EditText.EditInfo"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="原因" />
+
+        <View style="@style/View.LineHor" />
+
+        <Spinner
+            android:id="@+id/reasonSpinner"
+            style="@style/Spinner.Tool"
+            android:layout_marginEnd="16dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginStart="8dip" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line8" />
+
+    <TextView
+        android:id="@+id/cancelTextView"
+        style="@style/TextView.Button1"
+        android:layout_margin="0dip"
+        android:text="取消订单" />
+
+</LinearLayout>

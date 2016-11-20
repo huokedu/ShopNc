@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.HeightWrap"
+    android:background="@drawable/selector_color_white_add">
+
+    <ImageView
+        android:id="@+id/mainImageView"
+        style="@style/ImageView.ItemCategory1" />
+
+    <TextView
+        android:id="@+id/mainTextView"
+        style="@style/TextView.ItemCategory1Title"
+        android:layout_below="@+id/mainImageView" />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Main">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView
+        style="@style/ScrollView.Main"
+        android:layout_above="@+id/confirmTextView"
+        android:layout_below="@+id/toolbarInclude">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mainListView"
+                style="@style/ListView.Main" />
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                android:id="@+id/addressTitleTextView"
+                style="@style/TextView.ItemStoreName"
+                android:text="收货地址" />
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                android:id="@+id/addressRelativeLayout"
+                style="@style/Layout.Item7"
+                android:paddingBottom="8dip">
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/TextView.ItemAddressName" />
+
+                <TextView
+                    android:id="@+id/phoneTextView"
+                    style="@style/TextView.ItemAddressPhone"
+                    android:layout_toEndOf="@+id/nameTextView"
+                    android:layout_toRightOf="@+id/nameTextView" />
+
+                <TextView
+                    android:id="@+id/addressTextView"
+                    style="@style/TextView.ItemAddressArea"
+                    android:layout_below="@+id/nameTextView" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                android:id="@+id/invoiceTitleTextView"
+                style="@style/TextView.ItemStoreName"
+                android:text="发票信息" />
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout style="@style/Layout.Item">
+
+                <TextView
+                    android:id="@+id/invoiceNoTextView"
+                    style="@style/TextView.GoodsActivity1"
+                    android:text="不需要发票" />
+
+                <TextView
+                    android:id="@+id/invoiceYesTextView"
+                    style="@style/TextView.GoodsActivity1"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginStart="8dip"
+                    android:layout_toEndOf="@+id/invoiceNoTextView"
+                    android:layout_toRightOf="@+id/invoiceNoTextView"
+                    android:background="@drawable/border_text_view_goods_normal"
+                    android:text="需要发票"
+                    android:textColor="@color/greyAdd" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                android:id="@+id/paymentTitleTextView"
+                style="@style/TextView.ItemStoreName"
+                android:text="支付方式" />
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout style="@style/Layout.Item">
+
+                <TextView
+                    style="@style/TextView.GoodsActivity1"
+                    android:text="在线支付" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line8" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/confirmTextView"
+        style="@style/TextView.GoodsBuy"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:text="确认订单信息" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mainLinearLayout"
+    style="@style/Layout.Item4">
+
+    <View
+        style="@style/View.Line"
+        android:layout_height="4dip" />
+
+    <RelativeLayout style="@style/Layout.HeightWrap">
+
+        <TextView
+            android:id="@+id/storeTextView"
+            style="@style/TextView.ItemStoreName"
+            android:drawableEnd="@null"
+            android:drawableRight="@null" />
+
+        <TextView
+            android:id="@+id/stateTextView"
+            style="@style/TextView.ItemOrderState" />
+
+    </RelativeLayout>
+
+
+    <View style="@style/View.Line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mainListView"
+        style="@style/ListView.Main" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        style="@style/TextView.TitleRight" />
+
+    <View style="@style/View.Line" />
+
+    <RelativeLayout style="@style/Layout.Item">
+
+        <TextView
+            android:id="@+id/operaTextView"
+            style="@style/TextView.Button"
+            android:text="左" />
+
+        <TextView
+            android:id="@+id/optionTextView"
+            style="@style/TextView.Button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="右" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/View.Line"
+        android:layout_height="4dip" />
+
+</LinearLayout>

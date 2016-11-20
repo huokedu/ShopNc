@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Login">
+
+
+    <ImageView
+        style="@style/ImageView.Avatar"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dip"
+        android:layout_marginTop="64dip" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        style="@style/EditText.Username" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        style="@style/EditText.Password" />
+
+    <TextView
+        android:id="@+id/loginTextView"
+        style="@style/TextView.Login" />
+
+    <RelativeLayout
+        style="@style/Layout.LinearHor"
+        android:paddingLeft="68dip"
+        android:paddingRight="68dip">
+
+        <TextView
+            android:id="@+id/registerTextView"
+            style="@style/TextView.Register" />
+
+        <TextView
+            android:id="@+id/findTextView"
+            style="@style/TextView.Register"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="找回密码" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Layout.HeightWrap"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/wxTextView"
+            style="@style/TextView.LoginOther"
+            android:layout_alignBottom="@+id/qqTextView"
+            android:layout_alignTop="@+id/qqTextView"
+            android:layout_toLeftOf="@+id/qqTextView"
+            android:layout_toStartOf="@+id/qqTextView"
+            android:drawableTop="@drawable/ssdk_oks_classic_wechat"
+            android:text="微信" />
+
+        <TextView
+            android:id="@+id/qqTextView"
+            style="@style/TextView.LoginOther"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="32dip"
+            android:layout_marginRight="32dip"
+            android:drawableTop="@drawable/ssdk_oks_classic_qq"
+            android:text="QQ" />
+
+        <TextView
+            android:id="@+id/wbTextView"
+            style="@style/TextView.LoginOther"
+            android:layout_alignBottom="@+id/qqTextView"
+            android:layout_alignTop="@+id/qqTextView"
+            android:layout_toEndOf="@+id/qqTextView"
+            android:layout_toRightOf="@+id/qqTextView"
+            android:drawableTop="@drawable/ssdk_oks_classic_sinaweibo"
+            android:text="微薄" />
+
+    </RelativeLayout>
+
+</LinearLayout>

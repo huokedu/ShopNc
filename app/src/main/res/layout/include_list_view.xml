@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Main">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/mainSwipeRefreshLayout"
+        style="@style/Layout.SwipeRefresh">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mainListView"
+            style="@style/ListView.Main" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/stateTextView"
+        style="@style/TextView.State" />
+
+    <TextView
+        android:id="@+id/tipsTextView"
+        style="@style/TextView.Tips" />
+
+</RelativeLayout>

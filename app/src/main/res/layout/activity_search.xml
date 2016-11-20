@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    style="@style/Layout.Linear"
+    android:id="@+id/mainLinearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_search"/>
+
+    <include
+        android:id="@+id/mainInclude"
+        layout="@layout/include_list_view"/>
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <View style="@style/View.Line12" />
+
+    <RelativeLayout
+        android:id="@+id/avatarRelativeLayout"
+        style="@style/Layout.Tool"
+        android:layout_height="96dip"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="头像" />
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="96dip"
+            android:layout_height="64dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:src="@mipmap/ic_avatar" />
+
+    </RelativeLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="企鹅" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/qqEditText"
+            style="@style/EditText.EditInfo" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="旺旺" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/wwEditText"
+            style="@style/EditText.EditInfo" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="电话" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            style="@style/EditText.EditInfo"
+            android:inputType="phone" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="主营" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/zyEditText"
+            style="@style/EditText.EditInfo" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="描述" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            style="@style/EditText.EditInfo" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="关键" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/keywordEditText"
+            style="@style/EditText.EditInfo" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/saveTextView"
+        style="@style/TextView.Button1"
+        android:text="保存修改" />
+
+</LinearLayout>

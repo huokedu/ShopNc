@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView style="@style/ScrollView.Main">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <TextView
+                style="@style/TextView.ItemStoreName"
+                android:layout_height="40dip"
+                android:drawableEnd="@null"
+                android:drawableRight="@null"
+                android:text="订单商品" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/goodsListView"
+                style="@style/ListView.Wrap" />
+
+            <TextView
+                android:id="@+id/goodsTextView"
+                style="@style/TextView.TitleRight" />
+
+            <View style="@style/View.Line" />
+
+            <EditText
+                android:id="@+id/messageEditText"
+                style="@style/EditText.OrderMessage"
+                android:hint="请输入发货备忘" />
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/TextView.ItemStoreName"
+                android:text="收货地址" />
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                style="@style/Layout.Item7"
+                android:paddingBottom="8dip">
+
+                <TextView
+                    android:id="@+id/receiptNameTextView"
+                    style="@style/TextView.ItemAddressName" />
+
+                <TextView
+                    android:id="@+id/receiptPhoneTextView"
+                    style="@style/TextView.ItemAddressPhone"
+                    android:layout_toEndOf="@+id/receiptNameTextView"
+                    android:layout_toRightOf="@+id/receiptNameTextView" />
+
+                <TextView
+                    android:id="@+id/receiptAddressTextView"
+                    style="@style/TextView.ItemAddressArea"
+                    android:layout_below="@+id/receiptNameTextView" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/TextView.ItemStoreName"
+                android:text="发货地址" />
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                style="@style/Layout.Item7"
+                android:paddingBottom="8dip">
+
+                <TextView
+                    android:id="@+id/deliverNameTextView"
+                    style="@style/TextView.ItemAddressName" />
+
+                <TextView
+                    android:id="@+id/deliverPhoneTextView"
+                    style="@style/TextView.ItemAddressPhone"
+                    android:layout_toEndOf="@+id/deliverNameTextView"
+                    android:layout_toRightOf="@+id/deliverNameTextView" />
+
+                <TextView
+                    android:id="@+id/deliverAddressTextView"
+                    style="@style/TextView.ItemAddressArea"
+                    android:layout_below="@+id/deliverNameTextView" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/TextView.ItemStoreName"
+                android:text="物流服务" />
+
+            <View style="@style/View.Line" />
+
+            <RadioGroup style="@style/RadioGroup.Pay">
+
+                <RadioButton
+                    android:id="@+id/logisticsNoRadioButton"
+                    style="@style/CheckBox.Pay"
+                    android:text="无需物流运输服务" />
+
+                <RadioButton
+                    android:id="@+id/logisticsYesRadioButton"
+                    style="@style/CheckBox.Pay"
+                    android:text="自行联系物流公司" />
+
+                <Spinner
+                    android:id="@+id/logisticsSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/logisticsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:hint="请输入物流单号"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+            </RadioGroup>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                android:id="@+id/deliverTextView"
+                style="@style/TextView.Button1"
+                android:layout_margin="0dip"
+                android:text="发货" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

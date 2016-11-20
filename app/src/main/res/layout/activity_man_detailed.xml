@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Main">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLinearLayout"
+        style="@style/Layout.Toolbar">
+
+        <ImageView
+            android:id="@+id/backImageView"
+            style="@style/ImageView.Toolbar" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/TextView.Toolbar"
+            android:layout_toEndOf="@+id/backImageView"
+            android:layout_toLeftOf="@+id/praiseTextView"
+            android:layout_toRightOf="@+id/backImageView"
+            android:layout_toStartOf="@+id/praiseTextView" />
+
+        <TextView
+            android:id="@+id/praiseTextView"
+            style="@style/TextView.ToolbarMan"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/collectTextView"
+            android:layout_toStartOf="@+id/collectTextView"
+            android:drawableLeft="@mipmap/ic_man_praise_white"
+            android:drawableStart="@mipmap/ic_man_praise_white" />
+
+        <TextView
+            android:id="@+id/collectTextView"
+            style="@style/TextView.ToolbarMan"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/commentTextView"
+            android:layout_toStartOf="@+id/commentTextView"
+            android:drawableLeft="@mipmap/ic_man_collect_white"
+            android:drawableStart="@mipmap/ic_man_collect_white" />
+
+        <TextView
+            android:id="@+id/commentTextView"
+            style="@style/TextView.ToolbarMan"
+            android:layout_toLeftOf="@+id/shareImageView"
+            android:layout_toStartOf="@+id/shareImageView"
+            android:drawableLeft="@mipmap/ic_man_comment_white"
+            android:drawableStart="@mipmap/ic_man_comment_white" />
+
+        <ImageView
+            android:id="@+id/shareImageView"
+            style="@style/ImageView.Toolbar"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_man_share_white" />
+
+    </RelativeLayout>
+
+    <top.yokey.nsg.control.CustomScrollView
+        android:id="@+id/mainScrollView"
+        style="@style/ScrollView.Main"
+        android:layout_below="@id/toolbarLinearLayout">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <WebView
+                android:id="@+id/mainWebView"
+                style="@style/WebView.Main" />
+
+            <WebView
+                android:id="@+id/goneWebView"
+                style="@style/WebView.Main"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/commentTitleTextView"
+                style="@style/TextView.TitleLeft"
+                android:background="@color/whiteAdd"
+                android:text="评论列表" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mainListView"
+                style="@style/ListView.Wrap" />
+
+        </LinearLayout>
+
+    </top.yokey.nsg.control.CustomScrollView>
+
+    <LinearLayout
+        android:id="@+id/inputLinearLayout"
+        style="@style/Layout.HeightWrap"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/include_input_detailed" />
+
+    </LinearLayout>
+
+</RelativeLayout>

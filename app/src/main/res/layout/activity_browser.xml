@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Main">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <WebView
+        android:id="@+id/mainWebView"
+        style="@style/WebView.Main"
+        android:layout_below="@+id/toolbarInclude" />
+
+    <ProgressBar
+        android:id="@+id/mainProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="4dip"
+        android:layout_below="@+id/toolbarInclude" />
+
+</RelativeLayout>

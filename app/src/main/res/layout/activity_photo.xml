@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <top.yokey.nsg.control.PhotoViewPager
+        android:id="@+id/mainViewPager"
+        style="@style/ViewPager.Main"
+        android:background="@color/black" />
+
+</LinearLayout>

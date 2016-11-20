@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Item8">
+
+    <ImageView
+        android:id="@+id/topImageView"
+        android:layout_width="match_parent"
+        android:layout_height="12dip"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_vouchers" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topImageView"
+        android:layout_marginTop="8dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:textColor="@color/blackSub" />
+
+    <TextView
+        android:id="@+id/moneyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTextView"
+        android:layout_marginTop="4dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:textColor="@color/blackSub" />
+
+    <TextView
+        android:id="@+id/stateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moneyTextView"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="4dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:textColor="@color/blackSub" />
+
+</RelativeLayout>

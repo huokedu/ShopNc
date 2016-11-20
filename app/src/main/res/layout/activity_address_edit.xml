@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <TextView
+        android:id="@+id/areaTextView"
+        style="@style/TextView.TitleLeft"
+        android:text="请选择区域" />
+
+    <View style="@style/View.Line" />
+
+    <EditText
+        android:id="@+id/addressEditText"
+        style="@style/EditText.Address"
+        android:hint="请输入详细地址" />
+
+    <View style="@style/View.Line" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        style="@style/EditText.Address"
+        android:hint="请输入真实姓名" />
+
+    <View style="@style/View.Line" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        style="@style/EditText.Address"
+        android:hint="请输入手机号码"
+        android:inputType="phone" />
+
+    <View style="@style/View.Line" />
+
+    <CheckBox
+        android:id="@+id/defaultCheckBox"
+        style="@style/CheckBox.Main"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="设为默认地址" />
+
+    <TextView
+        android:id="@+id/editTextView"
+        style="@style/TextView.Button1"
+        android:layout_margin="0dip"
+        android:text="编辑地址" />
+
+</LinearLayout>

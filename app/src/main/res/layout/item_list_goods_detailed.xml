@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    style="@style/Layout.Item5">
+
+    <ImageView
+        android:id="@+id/mainImageView"
+        style="@style/ImageView.ItemGoodsHor" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/TextView.ItemGoodsName" />
+
+    <View style="@style/View.Line" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        style="@style/TextView.ItemPricePromotion" />
+
+</LinearLayout>

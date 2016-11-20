@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.HeightWrap"
+    android:padding="16dip">
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        style="@style/Layout.HeightWrap"
+        android:paddingEnd="56dip"
+        android:paddingRight="56dip">
+
+        <ImageView
+            android:id="@+id/headImageView"
+            style="@style/ImageView.ChatHead"
+            android:layout_marginEnd="8dip"
+            android:layout_marginRight="8dip" />
+
+        <TextView
+            android:id="@+id/msgTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/headImageView"
+            android:layout_toRightOf="@+id/headImageView"
+            android:background="@drawable/bg_chat_friend"
+            android:paddingBottom="16dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="16dip"
+            android:textColor="@color/blackSub"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myRelativeLayout"
+        style="@style/Layout.HeightWrap"
+        android:paddingLeft="56dip"
+        android:paddingStart="56dip">
+
+        <ImageView
+            android:id="@+id/myHeadImageView"
+            style="@style/ImageView.ChatHead"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dip"
+            android:layout_marginStart="8dip" />
+
+        <TextView
+            android:id="@+id/myMsgTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/myHeadImageView"
+            android:layout_toStartOf="@+id/myHeadImageView"
+            android:background="@drawable/bg_chat_my"
+            android:paddingBottom="16dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="20dip"
+            android:textColor="@color/blackSub"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

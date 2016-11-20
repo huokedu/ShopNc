@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Item8">
+
+    <ImageView
+        android:id="@+id/topImageView"
+        android:layout_width="match_parent"
+        android:layout_height="12dip"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_vouchers" />
+
+    <ImageView
+        android:id="@+id/mainImageView"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:layout_below="@+id/topImageView"
+        android:layout_margin="8dip"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/storeTextView"
+        style="@style/TextView.ItemMain"
+        android:layout_alignTop="@+id/mainImageView"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toRightOf="@+id/mainImageView" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        style="@style/TextView.ItemInfo"
+        android:layout_below="@+id/storeTextView"
+        android:layout_marginTop="2dip"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toRightOf="@+id/mainImageView"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/limitTextView"
+        style="@style/TextView.ItemInfo"
+        android:layout_below="@+id/timeTextView"
+        android:layout_marginTop="4dip"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toRightOf="@+id/mainImageView"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/moneyTextView"
+        style="@style/TextView.ItemPricePromotion"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/mainImageView"
+        android:layout_marginEnd="8dip"
+        android:layout_marginRight="8dip"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/stateTextView"
+        style="@style/TextView.ItemPricePromotion"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/moneyTextView"
+        android:layout_marginEnd="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:textSize="16sp" />
+
+</RelativeLayout>

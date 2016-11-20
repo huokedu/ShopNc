@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Item">
+
+    <ImageView
+        android:id="@+id/mainImageView"
+        style="@style/ImageView.ItemGoodsVer" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/TextView.ItemGoodsName"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toRightOf="@+id/mainImageView"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" />
+
+    <TextView
+        android:id="@+id/pricePromotionTextView"
+        style="@style/TextView.ItemPricePromotion"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTextView"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toRightOf="@+id/mainImageView"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" />
+
+    <TextView
+        android:id="@+id/storageTextView"
+        style="@style/TextView.ItemPrice"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pricePromotionTextView"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toRightOf="@+id/mainImageView"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/editButton"
+        style="@style/Button.SellerGoods"
+        android:layout_alignTop="@+id/delButton"
+        android:layout_toLeftOf="@+id/upButton"
+        android:layout_toStartOf="@+id/upButton"
+        app:backgroundTint="@color/main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/upButton"
+        style="@style/Button.SellerGoods"
+        android:layout_alignTop="@+id/delButton"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_toLeftOf="@+id/delButton"
+        android:layout_toStartOf="@+id/delButton"
+        android:src="@mipmap/ic_seller_goods_down"
+        app:backgroundTint="@color/circle" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/delButton"
+        style="@style/Button.SellerGoods"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nameTextView"
+        android:src="@mipmap/ic_seller_goods_del"
+        app:backgroundTint="@color/red" />
+
+</RelativeLayout>

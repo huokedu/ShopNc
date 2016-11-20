@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView
+        android:id="@+id/mainScrollView"
+        style="@style/ScrollView.Main">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <RelativeLayout
+                android:id="@+id/storeRelativeLayout"
+                style="@style/Layout.HeightWrap"
+                android:background="@color/main">
+
+                <ImageView
+                    android:id="@+id/avatarImageView"
+                    style="@style/ImageView.Avatar"
+                    android:layout_marginBottom="16dip"
+                    android:layout_marginEnd="16dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginStart="16dip"
+                    android:layout_marginTop="4dip" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/TextView.Username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/messageImageView"
+                    android:layout_marginTop="-2dip"
+                    android:paddingLeft="12dip"
+                    android:paddingRight="12dip" />
+
+                <ImageView
+                    android:id="@+id/messageImageView"
+                    style="@style/ImageView.Toolbar"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-8dip"
+                    android:background="@drawable/selector_color_main_add"
+                    android:src="@mipmap/ic_action_message" />
+
+                <ImageView
+                    android:id="@+id/qrCodeImageView"
+                    style="@style/ImageView.Toolbar"
+                    android:layout_marginTop="-8dip"
+                    android:layout_toLeftOf="@+id/messageImageView"
+                    android:layout_toStartOf="@+id/messageImageView"
+                    android:background="@drawable/selector_color_main_add"
+                    android:src="@mipmap/ic_action_qr_code" />
+
+            </RelativeLayout>
+
+            <LinearLayout style="@style/Layout.LinearHor">
+
+                <TextView
+                    android:id="@+id/orderTextView"
+                    style="@style/TextView.SellerNav"
+                    android:drawableTop="@mipmap/ic_seller_order"
+                    android:text="订单" />
+
+                <View style="@style/View.LineHor" />
+
+                <TextView
+                    android:id="@+id/refundTextView"
+                    style="@style/TextView.SellerNav"
+                    android:drawableTop="@mipmap/ic_seller_logistics"
+                    android:text="退款" />
+
+                <View style="@style/View.LineHor" />
+
+                <TextView
+                    android:id="@+id/returnTextView"
+                    style="@style/TextView.SellerNav"
+                    android:drawableTop="@mipmap/ic_seller_logistics"
+                    android:text="退货" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.LinearHor">
+
+                <TextView
+                    android:id="@+id/goodsTextView"
+                    style="@style/TextView.SellerNav"
+                    android:drawableTop="@mipmap/ic_seller_goods"
+                    android:text="商品" />
+
+                <View style="@style/View.LineHor" />
+
+                <TextView
+                    android:id="@+id/countTextView"
+                    style="@style/TextView.SellerNav"
+                    android:drawableTop="@mipmap/ic_seller_count"
+                    android:text="统计" />
+
+                <View style="@style/View.LineHor" />
+
+                <TextView
+                    android:id="@+id/settlementTextView"
+                    style="@style/TextView.SellerNav"
+                    android:drawableTop="@mipmap/ic_seller_settlement"
+                    android:text="结算" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

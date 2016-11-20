@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Layout.Linear">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <com.scrollablelayout.ScrollableLayout
+        android:id="@+id/mainScrollableLayout"
+        style="@style/ScrollView.Main"
+        android:layout_below="@+id/toolbarInclude">
+
+        <RelativeLayout
+            android:id="@+id/topRelativeLayout"
+            style="@style/Layout.Item">
+
+            <ImageView
+                android:id="@+id/mainImageView"
+                android:layout_width="84dip"
+                android:layout_height="84dip"
+                android:layout_marginEnd="8dip"
+                android:layout_marginRight="8dip"
+                android:src="@mipmap/ic_default_circle" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/TextView.ItemCircleName"
+                android:layout_toEndOf="@+id/mainImageView"
+                android:layout_toRightOf="@+id/mainImageView"
+                android:textColor="@color/circle" />
+
+            <TextView
+                android:id="@+id/lineTextView"
+                style="@style/TextView.ItemCircleLine"
+                android:layout_width="10dip"
+                android:layout_alignEnd="@+id/nameTextView"
+                android:layout_alignLeft="@+id/nameTextView"
+                android:layout_alignRight="@+id/nameTextView"
+                android:layout_alignStart="@+id/nameTextView"
+                android:layout_below="@+id/nameTextView" />
+
+            <TextView
+                android:id="@+id/line2TextView"
+                style="@style/TextView.ItemCircleLine"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/nameTextView"
+                android:layout_toEndOf="@+id/lineTextView"
+                android:layout_toRightOf="@+id/lineTextView"
+                android:background="@color/whiteAdd" />
+
+            <TextView
+                android:id="@+id/descTextView"
+                style="@style/TextView.ItemCircleContent"
+                android:layout_alignLeft="@+id/nameTextView"
+                android:layout_alignStart="@+id/nameTextView"
+                android:layout_below="@+id/lineTextView"
+                android:layout_marginTop="4dip" />
+
+            <TextView
+                android:id="@+id/authorTextView"
+                style="@style/TextView.ItemCircleName"
+                android:layout_below="@+id/mainImageView"
+                android:layout_marginTop="8dip"
+                android:drawableLeft="@mipmap/ic_circle_author"
+                android:drawablePadding="4dip"
+                android:drawableStart="@mipmap/ic_circle_author"
+                android:textColor="@color/greyAdd"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/browserTextView"
+                style="@style/TextView.ItemCircleName"
+                android:layout_alignTop="@+id/authorTextView"
+                android:layout_toLeftOf="@+id/likeTextView"
+                android:layout_toStartOf="@+id/likeTextView"
+                android:drawableLeft="@mipmap/ic_circle_browser"
+                android:drawablePadding="4dip"
+                android:drawableStart="@mipmap/ic_circle_browser"
+                android:textColor="@color/greyAdd"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/likeTextView"
+                style="@style/TextView.ItemCircleName"
+                android:layout_alignTop="@+id/authorTextView"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:layout_toLeftOf="@+id/commentTextView"
+                android:layout_toStartOf="@+id/commentTextView"
+                android:drawableLeft="@mipmap/ic_circle_like_no"
+                android:drawablePadding="4dip"
+                android:drawableStart="@mipmap/ic_circle_like_no"
+                android:textColor="@color/greyAdd"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/commentTextView"
+                style="@style/TextView.ItemCircleName"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/authorTextView"
+                android:drawableLeft="@mipmap/ic_circle_reply"
+                android:drawablePadding="4dip"
+                android:drawableStart="@mipmap/ic_circle_reply"
+                android:textColor="@color/greyAdd"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <View style="@style/View.Line" />
+
+        <TextView
+            style="@style/TextView.TitleLeft"
+            android:layout_height="40dip"
+            android:text="以下是主题回复" />
+
+        <View style="@style/View.Line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mainListView"
+            style="@style/ListView.Main" />
+
+    </com.scrollablelayout.ScrollableLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/createButton"
+        style="@style/Button.Release"
+        app:backgroundTint="@color/main" />
+
+</RelativeLayout>

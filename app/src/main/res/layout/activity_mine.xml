@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollView.Main">
+
+    <LinearLayout style="@style/Layout.Linear">
+
+        <RelativeLayout
+            android:id="@+id/userRelativeLayout"
+            style="@style/Layout.HeightWrap"
+            android:background="@color/mainAdd"
+            android:paddingBottom="16dip">
+
+            <ImageView
+                android:id="@+id/userAvatarImageView"
+                style="@style/ImageView.Avatar"
+                android:layout_marginEnd="16dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginStart="16dip"
+                android:layout_marginTop="12dip" />
+
+            <TextView
+                android:id="@+id/usernameTextView"
+                style="@style/TextView.Username"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/messageImageView"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip" />
+
+            <TextView
+                android:id="@+id/userLevelTextView"
+                style="@style/TextView.MineNum"
+                android:layout_below="@+id/notifyImageView"
+                android:layout_marginTop="3dip"
+                android:layout_toLeftOf="@+id/usernameTextView"
+                android:layout_toStartOf="@+id/usernameTextView"
+                android:background="@drawable/border_text_view_level"
+                android:textColor="@color/main"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/messageImageView"
+                style="@style/ImageView.Toolbar"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_color_add_main"
+                android:src="@mipmap/ic_action_message" />
+
+            <ImageView
+                android:id="@+id/notifyImageView"
+                style="@style/ImageView.Toolbar"
+                android:layout_toLeftOf="@+id/messageImageView"
+                android:layout_toStartOf="@+id/messageImageView"
+                android:background="@drawable/selector_color_add_main"
+                android:src="@mipmap/ic_action_notify" />
+
+            <ImageView
+                android:id="@+id/qrCodeImageView"
+                style="@style/ImageView.Toolbar"
+                android:layout_toLeftOf="@+id/notifyImageView"
+                android:layout_toStartOf="@+id/notifyImageView"
+                android:background="@drawable/selector_color_add_main"
+                android:src="@mipmap/ic_action_qr_code" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/Layout.LinearHor"
+            android:background="@color/mainUser">
+
+            <TextView
+                android:id="@+id/goodsTextView"
+                style="@style/TextView.Collection"
+                android:drawableTop="@mipmap/ic_goods_collection"
+                android:text="商品" />
+
+            <TextView
+                android:id="@+id/storeTextView"
+                style="@style/TextView.Collection"
+                android:drawableTop="@mipmap/ic_store_collection"
+                android:text="店铺" />
+
+            <TextView
+                android:id="@+id/footprintTextView"
+                style="@style/TextView.Collection"
+                android:drawableTop="@mipmap/ic_footprint"
+                android:text="我的足迹" />
+
+            <TextView
+                android:id="@+id/signTextView"
+                style="@style/TextView.Collection"
+                android:drawableTop="@mipmap/ic_sign"
+                android:text="每日签到" />
+
+        </LinearLayout>
+
+        <View style="@style/View.Line8" />
+
+        <RelativeLayout style="@style/Layout.HeightWrap">
+
+            <TextView
+                android:id="@+id/orderTextView"
+                style="@style/TextView.TitleLeft"
+                android:drawableLeft="@mipmap/ic_user_order"
+                android:drawableStart="@mipmap/ic_user_order"
+                android:text="全部订单" />
+
+            <TextView
+                android:id="@+id/orderNumberTextView"
+                style="@style/TextView.ItemOrderState"
+                android:textColor="@color/grey" />
+
+        </RelativeLayout>
+
+        <View style="@style/View.Line" />
+
+        <LinearLayout style="@style/Layout.LinearHor">
+
+            <RelativeLayout
+                android:id="@+id/waitPaymentRelativeLayout"
+                style="@style/Layout.Mine">
+
+                <TextView
+                    android:id="@+id/waitPaymentTextView"
+                    style="@style/TextView.Mine"
+                    android:drawableTop="@mipmap/ic_user_order_wait_pay"
+                    android:text="待付款" />
+
+                <TextView
+                    android:id="@+id/waitPaymentNumberTextView"
+                    style="@style/TextView.MineNum"
+                    android:layout_toEndOf="@+id/waitPaymentTextView"
+                    android:layout_toRightOf="@+id/waitPaymentTextView" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/waitDeliverRelativeLayout"
+                style="@style/Layout.Mine">
+
+                <TextView
+                    android:id="@+id/waitDeliverTextView"
+                    style="@style/TextView.Mine"
+                    android:drawableTop="@mipmap/ic_user_order_wait_drive"
+                    android:text="待发货" />
+
+                <TextView
+                    android:id="@+id/waitDeliverNumberTextView"
+                    style="@style/TextView.MineNum"
+                    android:layout_toEndOf="@+id/waitDeliverTextView"
+                    android:layout_toRightOf="@+id/waitDeliverTextView" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/waitReceiptRelativeLayout"
+                style="@style/Layout.Mine">
+
+                <TextView
+                    android:id="@+id/waitReceiptTextView"
+                    style="@style/TextView.Mine"
+                    android:drawableTop="@mipmap/ic_user_order_wait_receipt"
+                    android:text="待收货" />
+
+                <TextView
+                    android:id="@+id/waitReceiptNumberTextView"
+                    style="@style/TextView.MineNum"
+                    android:layout_toEndOf="@+id/waitReceiptTextView"
+                    android:layout_toRightOf="@+id/waitReceiptTextView" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/waitEvaluateRelativeLayout"
+                style="@style/Layout.Mine">
+
+                <TextView
+                    android:id="@+id/waitEvaluateTextView"
+                    style="@style/TextView.Mine"
+                    android:drawableTop="@mipmap/ic_user_order_wait_evaluate"
+                    android:text="待评价" />
+
+                <TextView
+                    android:id="@+id/waitEvaluateNumberTextView"
+                    style="@style/TextView.MineNum"
+                    android:layout_toEndOf="@+id/waitEvaluateTextView"
+                    android:layout_toRightOf="@+id/waitEvaluateTextView" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/waitRefundRelativeLayout"
+                style="@style/Layout.Mine">
+
+                <TextView
+                    style="@style/TextView.Mine"
+                    android:drawableTop="@mipmap/ic_user_order_wait_refund"
+                    android:text="退货/款" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View style="@style/View.Line8" />
+
+        <TextView
+            android:id="@+id/propertyTextView"
+            style="@style/TextView.TitleLeft"
+            android:drawableEnd="@mipmap/ic_dot_right"
+            android:drawableLeft="@mipmap/ic_user_property"
+            android:drawableRight="@mipmap/ic_dot_right"
+            android:drawableStart="@mipmap/ic_user_property"
+            android:text="我的财产" />
+
+        <View style="@style/View.Line" />
+
+        <LinearLayout style="@style/Layout.LinearHor">
+
+            <TextView
+                android:id="@+id/preDepositTextView"
+                style="@style/TextView.Mine"
+                android:layout_weight="1"
+                android:background="@drawable/selector_color_white_add"
+                android:drawableTop="@mipmap/ic_user_property_money"
+                android:text="预存款" />
+
+            <TextView
+                android:id="@+id/rechargeCardTextView"
+                style="@style/TextView.Mine"
+                android:layout_weight="1"
+                android:background="@drawable/selector_color_white_add"
+                android:drawableTop="@mipmap/ic_user_property_card"
+                android:text="充值卡" />
+
+            <TextView
+                android:id="@+id/vouchersTextView"
+                style="@style/TextView.Mine"
+                android:layout_weight="1"
+                android:background="@drawable/selector_color_white_add"
+                android:drawableTop="@mipmap/ic_user_property_vouchers"
+                android:text="代金券" />
+
+            <TextView
+                android:id="@+id/redPacketsTextView"
+                style="@style/TextView.Mine"
+                android:layout_weight="1"
+                android:background="@drawable/selector_color_white_add"
+                android:drawableTop="@mipmap/ic_user_property_red"
+                android:text="红包" />
+
+            <TextView
+                android:id="@+id/pointsTextView"
+                style="@style/TextView.Mine"
+                android:layout_weight="1"
+                android:background="@drawable/selector_color_white_add"
+                android:drawableTop="@mipmap/ic_user_property_integral"
+                android:text="积分" />
+
+        </LinearLayout>
+
+        <View style="@style/View.Line8" />
+
+        <TextView
+            android:id="@+id/sellerTextView"
+            style="@style/TextView.TitleLeft"
+            android:drawableEnd="@mipmap/ic_dot_right"
+            android:drawableLeft="@mipmap/ic_store"
+            android:drawableRight="@mipmap/ic_dot_right"
+            android:drawableStart="@mipmap/ic_store"
+            android:text="卖家中心"
+            android:visibility="gone" />
+
+        <View style="@style/View.Line" />
+
+        <TextView
+            android:id="@+id/invoiceTextView"
+            style="@style/TextView.TitleLeft"
+            android:drawableEnd="@mipmap/ic_dot_right"
+            android:drawableLeft="@mipmap/ic_user_property"
+            android:drawableRight="@mipmap/ic_dot_right"
+            android:drawableStart="@mipmap/ic_user_property"
+            android:text="发票管理" />
+
+        <View style="@style/View.Line" />
+
+        <TextView
+            android:id="@+id/addressTextView"
+            style="@style/TextView.TitleLeft"
+            android:drawableEnd="@mipmap/ic_dot_right"
+            android:drawableLeft="@mipmap/ic_user_address"
+            android:drawableRight="@mipmap/ic_dot_right"
+            android:drawableStart="@mipmap/ic_user_address"
+            android:text="收货地址" />
+
+        <View style="@style/View.Line" />
+
+        <TextView
+            android:id="@+id/settingTextView"
+            style="@style/TextView.TitleLeft"
+            android:drawableEnd="@mipmap/ic_dot_right"
+            android:drawableLeft="@mipmap/ic_user_setting"
+            android:drawableRight="@mipmap/ic_dot_right"
+            android:drawableStart="@mipmap/ic_user_setting"
+            android:text="系统设置" />
+
+        <View style="@style/View.Line8" />
+
+    </LinearLayout>
+
+</ScrollView>

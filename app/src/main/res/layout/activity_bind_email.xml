@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Login">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        style="@style/EditText.Email"
+        android:layout_marginTop="48dip" />
+
+    <TextView
+        android:id="@+id/confirmTextView"
+        style="@style/TextView.Login"
+        android:text="确认" />
+
+</LinearLayout>

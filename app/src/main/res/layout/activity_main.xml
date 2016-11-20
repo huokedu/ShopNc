@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainTabHost"
+    style="@style/Layout.Main">
+
+    <LinearLayout style="@style/Layout.Linear">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            style="@style/Layout.Main"
+            android:layout_weight="1" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            style="@style/Layout.Main"
+            android:visibility="gone" />
+
+        <View style="@style/View.Line" />
+
+        <LinearLayout
+            style="@style/Layout.LinearHor"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/homeTextView"
+                style="@style/TextView.NavMain"
+                android:drawableTop="@mipmap/ic_nav_main_home_press"
+                android:text="首页"
+                android:textColor="@color/main" />
+
+            <TextView
+                android:id="@+id/categoryTextView"
+                style="@style/TextView.NavMain"
+                android:drawableTop="@mipmap/ic_nav_main_category"
+                android:text="分类" />
+
+            <TextView
+                android:id="@+id/manTextView"
+                style="@style/TextView.NavMain"
+                android:drawableTop="@mipmap/ic_nav_main_man"
+                android:text="男人" />
+
+            <TextView
+                android:id="@+id/cartTextView"
+                style="@style/TextView.NavMain"
+                android:drawableTop="@mipmap/ic_nav_main_cart"
+                android:text="购物车" />
+
+            <TextView
+                android:id="@+id/mineTextView"
+                style="@style/TextView.NavMain"
+                android:drawableTop="@mipmap/ic_nav_main_mine"
+                android:text="我的" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</TabHost>

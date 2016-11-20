@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Toolbar"
+    android:background="@color/main">
+
+    <ImageView
+        android:id="@+id/backImageView"
+        style="@style/ImageView.Toolbar"
+        android:src="@mipmap/ic_action_back" />
+
+    <EditText
+        android:id="@+id/keywordEditText"
+        style="@style/EditText.Search1"
+        android:layout_toEndOf="@+id/backImageView"
+        android:layout_toLeftOf="@+id/searchImageView"
+        android:layout_toRightOf="@+id/backImageView"
+        android:layout_toStartOf="@+id/searchImageView" />
+
+    <Spinner
+        android:id="@+id/typeSpinner"
+        style="@style/Spinner.Toolbar"
+        android:layout_alignEnd="@+id/keywordEditText"
+        android:layout_alignRight="@+id/keywordEditText" />
+
+    <ImageView
+        android:id="@+id/searchImageView"
+        style="@style/ImageView.Toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_action_search" />
+
+</RelativeLayout>

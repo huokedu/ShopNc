@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView style="@style/ScrollView.Main">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <TextView
+                android:id="@+id/storeTextView"
+                style="@style/TextView.ItemStoreName" />
+
+            <View style="@style/View.Line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mainListView"
+                style="@style/ListView.Wrap" />
+
+            <LinearLayout
+                style="@style/Layout.Tool"
+                android:padding="0dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="16dip"
+                    android:text="退款原因" />
+
+                <View style="@style/View.LineHor" />
+
+                <Spinner
+                    android:id="@+id/reasonSpinner"
+                    style="@style/Spinner.Tool"
+                    android:layout_marginEnd="16dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginStart="8dip"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                style="@style/Layout.Tool"
+                android:padding="0dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="16dip"
+                    android:text="退款金额" />
+
+                <View style="@style/View.LineHor" />
+
+                <EditText
+                    android:id="@+id/moneyEditText"
+                    style="@style/EditText.EditInfo"
+                    android:enabled="false"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                style="@style/Layout.Tool"
+                android:padding="0dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="16dip"
+                    android:text="退货数量" />
+
+                <View style="@style/View.LineHor" />
+
+                <EditText
+                    android:id="@+id/numberEditText"
+                    style="@style/EditText.EditInfo"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                style="@style/Layout.Tool"
+                android:padding="0dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="16dip"
+                    android:text="退款说明" />
+
+                <View style="@style/View.LineHor" />
+
+                <EditText
+                    android:id="@+id/messageEditText"
+                    style="@style/EditText.EditInfo"
+                    android:gravity="center_vertical"
+                    android:hint="说明" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/EditText.OrderEvaluate"
+                android:text="凭证上传" />
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                style="@style/Layout.LinearHor"
+                android:background="@color/white"
+                android:padding="16dip">
+
+                <ImageView
+                    android:id="@+id/upload1ImageView"
+                    style="@style/ImageView.Upload"
+                    android:src="@mipmap/ic_add_img" />
+
+                <ImageView
+                    android:id="@+id/upload2ImageView"
+                    style="@style/ImageView.Upload" />
+
+                <ImageView
+                    android:id="@+id/upload3ImageView"
+                    style="@style/ImageView.Upload" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                android:id="@+id/submitTextView"
+                style="@style/TextView.Button1"
+                android:layout_margin="0dip"
+                android:text="提 交" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

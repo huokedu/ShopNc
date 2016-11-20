@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Theme.Main" parent="Base">
+        <item name="android:colorPrimary">@color/main</item>
+        <item name="android:colorControlNormal">@color/main</item>
+        <item name="android:colorPrimaryDark">@color/mainAdd</item>
+        <item name="android:colorControlHighlight">@color/main</item>
+        <item name="android:colorControlActivated">@color/mainAdd</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_left_out</item>
+        <item name="android:activityOpenEnterAnimation">@anim/activity_right_in</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_right_out</item>
+    </style>
+
+</resources>

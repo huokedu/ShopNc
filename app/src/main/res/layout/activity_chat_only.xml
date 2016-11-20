@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Main">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <include
+        layout="@layout/include_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lineView"
+        android:layout_below="@+id/toolbarInclude" />
+
+    <View
+        android:id="@id/lineView"
+        style="@style/View.Line"
+        android:layout_above="@+id/inputLinearLayout" />
+
+    <LinearLayout
+        android:id="@+id/inputLinearLayout"
+        style="@style/Layout.LinearHor"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip">
+
+        <EditText
+            android:id="@+id/contentEditText"
+            style="@style/EditText.Chat"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/sendTextView"
+            style="@style/TextView.GoodsActivity1"
+            android:layout_width="56dip"
+            android:layout_height="34dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginStart="8dip"
+            android:gravity="center"
+            android:padding="0dip"
+            android:text="发 送"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

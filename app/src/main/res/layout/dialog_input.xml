@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Dialog">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/TextView.TitleDialog" />
+
+    <View
+        android:id="@+id/line1View"
+        style="@style/View.Line"
+        android:layout_below="@+id/titleTextView" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        style="@style/TextView.ContentDialog"
+        android:layout_height="48dip"
+        android:layout_below="@+id/titleTextView"
+        android:layout_margin="16dip"
+        android:background="@drawable/selector_edit_text_line"
+        android:inputType="text"
+        android:padding="0dip" />
+
+    <View
+        android:id="@+id/line2View"
+        style="@style/View.Line"
+        android:layout_below="@+id/contentEditText" />
+
+    <LinearLayout
+        style="@style/Layout.LinearHor"
+        android:layout_below="@+id/line2View"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/cancelTextView"
+            style="@style/TextView.CancelDialog" />
+
+        <TextView
+            android:id="@+id/confirmTextView"
+            style="@style/TextView.ConfirmDialog" />
+
+    </LinearLayout>
+
+</RelativeLayout>

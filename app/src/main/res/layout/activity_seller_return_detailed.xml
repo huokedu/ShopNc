@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView style="@style/ScrollView.Main">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <TextView
+                style="@style/TextView.TitleLeft"
+                android:text="用户退货申请" />
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="退货编号" />
+
+                <TextView
+                    android:id="@+id/snTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="退货原因" />
+
+                <TextView
+                    android:id="@+id/reasonTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="退货数量" />
+
+                <TextView
+                    android:id="@+id/numberTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="退货金额" />
+
+                <TextView
+                    android:id="@+id/moneyTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="退货说明" />
+
+                <TextView
+                    android:id="@+id/messageTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                style="@style/Layout.Tool"
+                android:layout_height="64dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:layout_height="64dip"
+                    android:text="图片凭证" />
+
+                <ImageView
+                    android:id="@+id/oneImageView"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toLeftOf="@+id/twoImageView"
+                    android:layout_toStartOf="@+id/twoImageView" />
+
+                <ImageView
+                    android:id="@+id/twoImageView"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_toLeftOf="@+id/thrImageView"
+                    android:layout_toStartOf="@+id/thrImageView" />
+
+                <ImageView
+                    android:id="@+id/thrImageView"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/TextView.TitleLeft"
+                android:text="商家退货处理" />
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="审核状态" />
+
+                <TextView
+                    android:id="@+id/storeStateTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="商家备注" />
+
+                <TextView
+                    android:id="@+id/storeMessageTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/TextView.TitleLeft"
+                android:text="平台退货处理" />
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="平台确认" />
+
+                <TextView
+                    android:id="@+id/adminStateTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="平台备注" />
+
+                <TextView
+                    android:id="@+id/adminMessageTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

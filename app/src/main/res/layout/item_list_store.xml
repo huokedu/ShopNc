@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Item7">
+
+    <ImageView
+        android:id="@+id/mainImageView"
+        style="@style/ImageView.ItemGoodsVer"
+        android:layout_width="56dip"
+        android:layout_height="56dip"
+        android:layout_marginEnd="8dip"
+        android:layout_marginRight="8dip" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/TextView.ItemGoodsName"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toRightOf="@+id/mainImageView"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        style="@style/TextView.ItemTime"
+        android:layout_height="24dip" />
+
+    <TextView
+        android:id="@+id/collectionTextView"
+        style="@style/TextView.ItemStore"
+        android:layout_below="@+id/nameTextView"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toRightOf="@+id/mainImageView" />
+
+    <TextView
+        android:id="@+id/goodsTextView"
+        style="@style/TextView.ItemStore"
+        android:layout_below="@+id/nameTextView"
+        android:layout_toEndOf="@+id/collectionTextView"
+        android:layout_toRightOf="@+id/collectionTextView"
+        android:drawableLeft="@mipmap/ic_item_goods"
+        android:drawableStart="@mipmap/ic_item_goods" />
+
+    <View
+        style="@style/View.Line"
+        android:layout_below="@+id/mainImageView"
+        android:layout_marginTop="8dip" />
+
+</RelativeLayout>

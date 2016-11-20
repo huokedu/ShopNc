@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView style="@style/ScrollView.Main">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <TextView
+                style="@style/TextView.TitleLeft"
+                android:text="用户退款申请" />
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="退款编号" />
+
+                <TextView
+                    android:id="@+id/snTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="退款原因" />
+
+                <TextView
+                    android:id="@+id/reasonTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="退款金额" />
+
+                <TextView
+                    android:id="@+id/moneyTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="退款说明" />
+
+                <TextView
+                    android:id="@+id/messageTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                style="@style/Layout.Tool"
+                android:layout_height="64dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:layout_height="64dip"
+                    android:text="图片凭证" />
+
+                <ImageView
+                    android:id="@+id/oneImageView"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toLeftOf="@+id/twoImageView"
+                    android:layout_toStartOf="@+id/twoImageView" />
+
+                <ImageView
+                    android:id="@+id/twoImageView"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_toLeftOf="@+id/thrImageView"
+                    android:layout_toStartOf="@+id/thrImageView" />
+
+                <ImageView
+                    android:id="@+id/thrImageView"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/TextView.TitleLeft"
+                android:text="商家退款处理" />
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                style="@style/Layout.Tool"
+                android:padding="0dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="16dip"
+                    android:text="商家备注" />
+
+                <View style="@style/View.LineHor" />
+
+                <RadioButton
+                    android:id="@+id/yesRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginStart="8dip"
+                    android:checked="true"
+                    android:text="同意" />
+
+                <RadioButton
+                    android:id="@+id/noRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginStart="8dip"
+                    android:text="拒绝" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                style="@style/Layout.Tool"
+                android:padding="0dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="16dip"
+                    android:text="商家备注" />
+
+                <View style="@style/View.LineHor" />
+
+                <EditText
+                    android:id="@+id/storeMessageEditText"
+                    style="@style/EditText.Tool"
+                    android:hint="处理备注" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                android:id="@+id/handlerTextView"
+                style="@style/TextView.Button1"
+                android:layout_margin="0dip"
+                android:text="处理退款" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

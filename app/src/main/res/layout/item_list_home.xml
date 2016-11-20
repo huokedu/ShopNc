@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Item4">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/advViewPager"
+        style="@style/ViewPager.Main"
+        android:layout_height="160dip" />
+
+    <LinearLayout
+        android:id="@+id/nav1LinearLayout"
+        style="@style/Layout.LinearHor"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/categoryTextView"
+            style="@style/TextView.NavHome"
+            android:drawableTop="@mipmap/ic_nav_home_category"
+            android:text="分类" />
+
+        <TextView
+            android:id="@+id/cartTextView"
+            style="@style/TextView.NavHome"
+            android:drawableTop="@mipmap/ic_nav_home_cart"
+            android:text="购物车" />
+
+        <TextView
+            android:id="@+id/storeTextView"
+            style="@style/TextView.NavHome"
+            android:drawableTop="@mipmap/ic_nav_home_store"
+            android:text="店铺街" />
+
+        <TextView
+            android:id="@+id/signTextView"
+            style="@style/TextView.NavHome"
+            android:drawableTop="@mipmap/ic_nav_home_sign"
+            android:text="签到" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav2LinearLayout"
+        style="@style/Layout.LinearHor"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/mineTextView"
+            style="@style/TextView.NavHome"
+            android:drawableTop="@mipmap/ic_nav_home_mine"
+            android:text="我的" />
+
+        <TextView
+            android:id="@+id/orderTextView"
+            style="@style/TextView.NavHome"
+            android:drawableTop="@mipmap/ic_nav_home_order"
+            android:text="订单" />
+
+        <TextView
+            android:id="@+id/propertyTextView"
+            style="@style/TextView.NavHome"
+            android:drawableTop="@mipmap/ic_nav_home_property"
+            android:text="财产" />
+
+        <TextView
+            android:id="@+id/footprintTextView"
+            style="@style/TextView.NavHome"
+            android:drawableTop="@mipmap/ic_nav_home_footprint"
+            android:text="足迹" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home1LinearLayout"
+        style="@style/Layout.Item4">
+
+        <TextView
+            android:id="@+id/home1TitleTextView"
+            style="@style/TextView.ItemHomeTitle" />
+
+        <ImageView
+            android:id="@+id/home1ImageView"
+            style="@style/ImageView.Main"
+            android:layout_height="140dip" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home2LinearLayout"
+        style="@style/Layout.Item4">
+
+        <TextView
+            android:id="@+id/home2TitleTextView"
+            style="@style/TextView.ItemHomeTitle" />
+
+        <View style="@style/View.Line" />
+
+        <LinearLayout style="@style/Layout.LinearHor">
+
+            <ImageView
+                android:id="@+id/home21ImageView"
+                style="@style/ImageView.ItemHomeMax" />
+
+            <View style="@style/View.LineHor" />
+
+            <LinearLayout
+                style="@style/Layout.Linear"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/home22ImageView"
+                    style="@style/ImageView.ItemHomeMin" />
+
+                <View style="@style/View.Line" />
+
+                <ImageView
+                    android:id="@+id/home23ImageView"
+                    style="@style/ImageView.ItemHomeMin" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home3LinearLayout"
+        style="@style/Layout.Item4">
+
+        <TextView
+            android:id="@+id/home3TitleTextView"
+            style="@style/TextView.ItemHomeTitle" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home3ListView"
+            style="@style/ListView.Main" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home4LinearLayout"
+        style="@style/Layout.Item4">
+
+        <TextView
+            android:id="@+id/home4TitleTextView"
+            style="@style/TextView.ItemHomeTitle" />
+
+        <View style="@style/View.Line" />
+
+        <LinearLayout style="@style/Layout.LinearHor">
+
+            <LinearLayout
+                style="@style/Layout.Linear"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/home42ImageView"
+                    style="@style/ImageView.ItemHomeMin" />
+
+                <View style="@style/View.Line" />
+
+                <ImageView
+                    android:id="@+id/home43ImageView"
+                    style="@style/ImageView.ItemHomeMin" />
+
+            </LinearLayout>
+
+            <View style="@style/View.LineHor" />
+
+            <ImageView
+                android:id="@+id/home41ImageView"
+                style="@style/ImageView.ItemHomeMax" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goodsLinearLayout"
+        style="@style/Layout.Item3">
+
+        <TextView
+            android:id="@+id/goodsTitleTextView"
+            style="@style/TextView.ItemHomeTitle" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/goodsListView"
+            style="@style/ListView.Main" />
+
+    </LinearLayout>
+
+</LinearLayout>

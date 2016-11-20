@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/preDepositLinearLayout"
+        style="@style/Layout.Linear"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_color_white_add">
+
+        <TextView
+            style="@style/TextView.Property"
+            android:drawableLeft="@mipmap/ic_user_property_money"
+            android:drawableStart="@mipmap/ic_user_property_money"
+            android:text="预存款" />
+
+        <TextView
+            style="@style/TextView.PropertyTips"
+            android:text="预存款账户余额，充值及体现明细" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        android:id="@+id/rechargeCardLinearLayout"
+        style="@style/Layout.Linear"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_color_white_add">
+
+        <TextView
+            style="@style/TextView.Property"
+            android:drawableLeft="@mipmap/ic_user_property_card"
+            android:drawableStart="@mipmap/ic_user_property_card"
+            android:text="充值卡" />
+
+        <TextView
+            style="@style/TextView.PropertyTips"
+            android:text="充值卡账户余额及卡密充值操作" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        android:id="@+id/vouchersLinearLayout"
+        style="@style/Layout.Linear"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_color_white_add">
+
+        <TextView
+            style="@style/TextView.Property"
+            android:drawableLeft="@mipmap/ic_user_property_vouchers"
+            android:drawableStart="@mipmap/ic_user_property_vouchers"
+            android:text="代金券" />
+
+        <TextView
+            style="@style/TextView.PropertyTips"
+            android:text="店铺代金券使用情况及卡密兑换代金券操作" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        android:id="@+id/redPacketsLinearLayout"
+        style="@style/Layout.Linear"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_color_white_add">
+
+        <TextView
+            style="@style/TextView.Property"
+            android:drawableLeft="@mipmap/ic_user_property_red"
+            android:drawableStart="@mipmap/ic_user_property_red"
+            android:text="红包" />
+
+        <TextView
+            style="@style/TextView.PropertyTips"
+            android:text="平台红包使用情况及卡密领取红包操作" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        android:id="@+id/pointsLinearLayout"
+        style="@style/Layout.Linear"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_color_white_add">
+
+        <TextView
+            style="@style/TextView.Property"
+            android:drawableLeft="@mipmap/ic_user_property_integral"
+            android:drawableStart="@mipmap/ic_user_property_integral"
+            android:text="积分" />
+
+        <TextView
+            style="@style/TextView.PropertyTips"
+            android:text="会员积分获取及消费日记" />
+
+    </LinearLayout>
+
+</LinearLayout>

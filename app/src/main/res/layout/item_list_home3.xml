@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.HeightWrap"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Layout.LinearHor"
+        android:layout_height="70dip">
+
+        <ImageView
+            android:id="@+id/oneImageView"
+            style="@style/ImageView.ItemHomeMin" />
+
+        <View style="@style/View.LineHor" />
+
+        <ImageView
+            android:id="@+id/twoImageView"
+            style="@style/ImageView.ItemHomeMin" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+</LinearLayout>

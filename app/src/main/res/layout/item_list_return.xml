@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mainLinearLayout"
+    style="@style/Layout.Item10">
+
+    <RelativeLayout style="@style/Layout.HeightWrap">
+
+        <TextView
+            android:id="@+id/storeTextView"
+            style="@style/TextView.ItemStoreName"
+            android:drawableEnd="@null"
+            android:drawableRight="@null" />
+
+        <TextView
+            android:id="@+id/stateTextView"
+            style="@style/TextView.ItemOrderState" />
+
+    </RelativeLayout>
+
+    <View style="@style/View.Line" />
+
+    <RelativeLayout
+        android:id="@+id/goodsRelativeLayout"
+        style="@style/Layout.Item"
+        android:background="@null">
+
+        <ImageView
+            android:id="@+id/goodsImageView"
+            style="@style/ImageView.ItemGoodsVer"
+            android:layout_width="64dip"
+            android:layout_height="64dip" />
+
+        <TextView
+            android:id="@+id/goodsTextView"
+            style="@style/TextView.ItemGoodsName"
+            android:layout_toEndOf="@+id/goodsImageView"
+            android:layout_toRightOf="@+id/goodsImageView"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/infoTextView"
+        style="@style/TextView.TitleRight" />
+
+    <View style="@style/View.Line" />
+
+    <RelativeLayout style="@style/Layout.Item">
+
+        <TextView
+            android:id="@+id/detailedTextView"
+            style="@style/TextView.Button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="退货详细" />
+
+    </RelativeLayout>
+
+</LinearLayout>

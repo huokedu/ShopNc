@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Item10">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mainListView"
+        style="@style/ListView.Main" />
+
+    <TextView
+        android:id="@+id/payTextView"
+        style="@style/TextView.Button2"
+        android:text="订单支付" />
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.HeightWrap"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:layout_height="56dip">
+
+        <ImageView
+            android:id="@+id/headImageView"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/usernameTextView"
+            style="@style/TextView.ToolTitle"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:textColor="@color/blackSub"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            style="@style/TextView.ToolValue"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <RelativeLayout
+        style="@style/Layout.Tool"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip">
+
+        <ImageView
+            android:id="@+id/starImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_star_fiv" />
+
+        <TextView
+            android:id="@+id/contentTextView"
+            style="@style/TextView.Content"
+            android:layout_below="@+id/starImageView"
+            android:layout_marginTop="8dip"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        android:id="@+id/imageLinearLayout"
+        style="@style/Layout.LinearHor"
+        android:background="@color/white"
+        android:padding="16dip">
+
+        <ImageView
+            android:id="@+id/oneImageView"
+            style="@style/ImageView.Upload"
+            android:src="@mipmap/ic_add_img" />
+
+        <ImageView
+            android:id="@+id/twoImageView"
+            style="@style/ImageView.Upload" />
+
+        <ImageView
+            android:id="@+id/thrImageView"
+            style="@style/ImageView.Upload" />
+
+        <ImageView
+            android:id="@+id/fouImageView"
+            style="@style/ImageView.Upload" />
+
+        <ImageView
+            android:id="@+id/fivImageView"
+            style="@style/ImageView.Upload" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/View.Line"
+        android:layout_height="8dip" />
+
+</LinearLayout>

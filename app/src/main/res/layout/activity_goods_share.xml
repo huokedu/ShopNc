@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Main"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <ImageView
+        android:id="@+id/qrCodeImageView"
+        android:layout_width="256dip"
+        android:layout_height="256dip"
+        android:layout_below="@+id/toolbarInclude"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dip" />
+
+    <TextView
+        android:id="@+id/otherTextView"
+        style="@style/TextView.Title"
+        android:layout_below="@+id/qrCodeImageView"
+        android:text="其他分享方式(QQ，微信，短信等)" />
+
+</RelativeLayout>

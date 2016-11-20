@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Layout.HeightWrap"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView style="@style/ScrollView.Main">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <RelativeLayout
+                android:id="@+id/userRelativeLayout"
+                style="@style/Layout.HeightWrap"
+                android:background="@color/main"
+                android:paddingBottom="16dip"
+                android:paddingLeft="16dip"
+                android:paddingRight="16dip"
+                android:paddingTop="4dip">
+
+                <ImageView
+                    android:id="@+id/avatarImageView"
+                    style="@style/ImageView.Avatar" />
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    style="@style/TextView.Username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dip"
+                    android:layout_toEndOf="@+id/avatarImageView"
+                    android:layout_toRightOf="@+id/avatarImageView" />
+
+                <ImageView
+                    android:id="@+id/qrCodeImageView"
+                    android:layout_width="18dip"
+                    android:layout_height="18dip"
+                    android:layout_below="@+id/usernameTextView"
+                    android:layout_marginTop="4dip"
+                    android:layout_toEndOf="@+id/avatarImageView"
+                    android:layout_toRightOf="@+id/avatarImageView"
+                    android:src="@mipmap/ic_qr_code_white" />
+
+                <TextView
+                    android:id="@+id/levelTextView"
+                    style="@style/TextView.MineNum"
+                    android:layout_alignTop="@+id/qrCodeImageView"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginStart="8dip"
+                    android:layout_toEndOf="@+id/qrCodeImageView"
+                    android:layout_toRightOf="@+id/qrCodeImageView"
+                    android:background="@drawable/border_text_view_level"
+                    android:textColor="@color/main"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/loginTextView"
+                    style="@style/TextView.StoreCredit"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/avatarImageView"
+                    android:layout_marginTop="4dip" />
+
+                <TextView
+                    android:id="@+id/lastLoginTextView"
+                    style="@style/TextView.StoreCredit"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/loginTextView"
+                    android:layout_marginTop="4dip" />
+
+            </RelativeLayout>
+
+            <LinearLayout style="@style/Layout.LinearHor">
+
+                <TextView
+                    android:id="@+id/passwordTextView"
+                    style="@style/TextView.UserCenter"
+                    android:drawableTop="@mipmap/ic_user_center_password"
+                    android:text="登录密码" />
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    style="@style/TextView.UserCenter"
+                    android:drawableTop="@mipmap/ic_user_center_email"
+                    android:text="邮箱绑定" />
+
+                <TextView
+                    android:id="@+id/mobileTextView"
+                    style="@style/TextView.UserCenter"
+                    android:drawableTop="@mipmap/ic_user_center_mobile"
+                    android:text="手机绑定" />
+
+                <TextView
+                    android:id="@+id/payPassTextView"
+                    style="@style/TextView.UserCenter"
+                    android:drawableTop="@mipmap/ic_user_center_pay_pass"
+                    android:text="支付密码" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line8" />
+
+            <LinearLayout
+                android:id="@+id/nameLinearLayout"
+                style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="姓名" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                android:id="@+id/sexLinearLayout"
+                style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="性别" />
+
+                <TextView
+                    android:id="@+id/sexTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                android:id="@+id/qqLinearLayout"
+                style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="Q  Q" />
+
+                <TextView
+                    android:id="@+id/qqTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                android:id="@+id/wwLinearLayout"
+                style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="旺旺" />
+
+                <TextView
+                    android:id="@+id/wwTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                android:id="@+id/birthdayLinearLayout"
+                style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="生日" />
+
+                <TextView
+                    android:id="@+id/birthdayTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                android:id="@+id/areaLinearLayout"
+                style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="地区" />
+
+                <TextView
+                    android:id="@+id/areaTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                android:id="@+id/feedbackTextView"
+                style="@style/TextView.TitleLeft"
+                android:drawableEnd="@mipmap/ic_dot_right"
+                android:drawableRight="@mipmap/ic_dot_right"
+                android:text="用户反馈" />
+
+            <TextView
+                android:id="@+id/logoutTextView"
+                style="@style/TextView.Button1"
+                android:text="注销登录" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

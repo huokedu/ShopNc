@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <View style="@style/View.Line8" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:layout_height="80dip"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:layout_height="80dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="内容" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/contentEditText"
+            style="@style/EditText.EditInfo"
+            android:layout_height="80dip"
+            android:gravity="center_vertical"
+            android:hint="回复内容"
+            android:inputType="none" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line8" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        style="@style/Layout.Tool"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip">
+
+        <ImageView
+            android:id="@+id/mainImageView"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:src="@mipmap/ic_add_img" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dip"
+            android:layout_toEndOf="@+id/mainImageView"
+            android:layout_toRightOf="@+id/mainImageView"
+            android:gravity="center_vertical"
+            android:padding="16dip"
+            android:text="点击添加图片"
+            android:textColor="@color/grey" />
+
+    </RelativeLayout>
+
+    <View style="@style/View.Line8" />
+
+    <TextView
+        android:id="@+id/replyTextView"
+        style="@style/TextView.Button1"
+        android:layout_margin="0dip"
+        android:text="发表回复" />
+
+</LinearLayout>

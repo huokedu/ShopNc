@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Item4">
+
+    <TextView
+        android:id="@+id/storeTextView"
+        style="@style/TextView.ItemStoreName" />
+
+    <View style="@style/View.Line" />
+
+    <RelativeLayout
+        style="@style/Layout.HeightWrap"
+        android:background="@color/white"
+        android:padding="8dip">
+
+        <CheckBox
+            android:id="@+id/chooseCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/goodsImageView"
+            style="@style/ImageView.ItemGoodsVer"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginStart="8dip"
+            android:layout_toEndOf="@+id/chooseCheckBox"
+            android:layout_toRightOf="@+id/chooseCheckBox"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/goodsNameTextView"
+            style="@style/TextView.ItemGoodsName"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/goodsImageView"
+            android:layout_toLeftOf="@+id/delImageView"
+            android:layout_toRightOf="@+id/goodsImageView"
+            android:layout_toStartOf="@+id/delImageView"
+            android:paddingBottom="0dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="0dip" />
+
+        <TextView
+            android:id="@+id/priceTextView"
+            style="@style/TextView.ItemPricePromotion"
+            android:layout_alignBottom="@+id/goodsImageView"
+            android:layout_below="@+id/goodsNameTextView"
+            android:layout_toEndOf="@+id/goodsImageView"
+            android:layout_toRightOf="@+id/goodsImageView"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip" />
+
+        <ImageView
+            android:id="@+id/delImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_del" />
+
+        <TextView
+            android:id="@+id/addTextView"
+            style="@style/TextView.GoodsChoose"
+            android:layout_alignBottom="@+id/goodsImageView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="+" />
+
+        <EditText
+            android:id="@+id/numberEditText"
+            style="@style/EditText.Goods"
+            android:layout_alignBottom="@+id/addTextView"
+            android:layout_toLeftOf="@+id/addTextView"
+            android:layout_toStartOf="@+id/addTextView"
+            android:enabled="false" />
+
+        <TextView
+            android:id="@+id/subTextView"
+            style="@style/TextView.GoodsChoose"
+            android:layout_alignBottom="@+id/numberEditText"
+            android:layout_toLeftOf="@+id/numberEditText"
+            android:layout_toStartOf="@+id/numberEditText"
+            android:text="-" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineView"
+        style="@style/View.Line8" />
+
+</LinearLayout>

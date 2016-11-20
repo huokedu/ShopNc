@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <RelativeLayout
+        style="@style/Layout.HeightWrap"
+        android:layout_height="wrap_content"
+        android:background="@color/main"
+        android:paddingBottom="32dip"
+        android:paddingTop="16dip">
+
+        <TextView
+            android:id="@+id/signTextView"
+            android:layout_width="104dip"
+            android:layout_height="104dip"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/bg_sign_button"
+            android:gravity="center"
+            android:text="每日签到\n+10积分"
+            android:textColor="@color/main"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_list_view" />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Dialog"
+    android:orientation="vertical"
+    android:padding="16dip">
+
+    <top.yokey.nsg.control.CenterTextView
+        android:id="@+id/manTextView"
+        style="@style/TextView.Gender"
+        android:drawableLeft="@mipmap/ic_default_boy"
+        android:drawablePadding="8dip"
+        android:drawableStart="@mipmap/ic_default_boy"
+        android:gravity="center_vertical"
+        android:text="男" />
+
+    <View
+        style="@style/View.Line"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="8dip" />
+
+    <top.yokey.nsg.control.CenterTextView
+        android:id="@+id/womanTextView"
+        style="@style/TextView.Gender"
+        android:drawableLeft="@mipmap/ic_default_girl"
+        android:drawablePadding="8dip"
+        android:drawableStart="@mipmap/ic_default_girl"
+        android:gravity="center_vertical"
+        android:text="女" />
+
+</LinearLayout>

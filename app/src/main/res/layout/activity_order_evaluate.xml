@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView style="@style/ScrollView.Main">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <TextView
+                android:id="@+id/storeTextView"
+                style="@style/TextView.ItemStoreName" />
+
+            <View style="@style/View.Line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mainListView"
+                style="@style/ListView.Wrap" />
+
+            <View style="@style/View.Line" />
+
+            <TextView
+                android:id="@+id/infoTextView"
+                style="@style/TextView.TitleRight" />
+
+            <View style="@style/View.Line8" />
+
+            <EditText
+                android:id="@+id/evaluateEditText"
+                style="@style/EditText.OrderEvaluate" />
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                style="@style/Layout.LinearHor"
+                android:background="@color/white"
+                android:padding="16dip">
+
+                <ImageView
+                    android:id="@+id/upload1ImageView"
+                    style="@style/ImageView.Upload"
+                    android:src="@mipmap/ic_add_img" />
+
+                <ImageView
+                    android:id="@+id/upload2ImageView"
+                    style="@style/ImageView.Upload" />
+
+                <ImageView
+                    android:id="@+id/upload3ImageView"
+                    style="@style/ImageView.Upload" />
+
+                <ImageView
+                    android:id="@+id/upload4ImageView"
+                    style="@style/ImageView.Upload" />
+
+                <ImageView
+                    android:id="@+id/upload5ImageView"
+                    style="@style/ImageView.Upload" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line8" />
+
+            <LinearLayout
+                style="@style/Layout.Linear"
+                android:background="@color/white"
+                android:padding="16dip">
+
+                <LinearLayout
+                    style="@style/Layout.LinearHor"
+                    android:layout_height="56dip">
+
+                    <TextView
+                        style="@style/TextView.Evaluate"
+                        android:text="商品评分：" />
+
+                    <RatingBar
+                        android:id="@+id/scoreRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:stepSize="0.5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Layout.LinearHor"
+                    android:layout_height="56dip">
+
+                    <TextView
+                        style="@style/TextView.Evaluate"
+                        android:text="描述相符：" />
+
+                    <RatingBar
+                        android:id="@+id/descRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:stepSize="0.5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Layout.LinearHor"
+                    android:layout_height="56dip">
+
+                    <TextView
+                        style="@style/TextView.Evaluate"
+                        android:text="服务态度：" />
+
+                    <RatingBar
+                        android:id="@+id/serverRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:stepSize="0.5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Layout.LinearHor"
+                    android:layout_height="56dip">
+
+                    <TextView
+                        style="@style/TextView.Evaluate"
+                        android:text="发货速度：" />
+
+                    <RatingBar
+                        android:id="@+id/deliverRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:stepSize="0.5" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/evaluateTextView"
+                style="@style/TextView.Button1"
+                android:text="评价" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

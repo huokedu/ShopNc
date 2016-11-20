@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Main">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView
+        style="@style/ScrollView.Main"
+        android:layout_below="@+id/toolbarInclude">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <TextView
+                android:id="@+id/snTextView"
+                style="@style/TextView.ItemStoreName"
+                android:text="订单编号" />
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/TextView.ItemStoreName"
+                android:text="预存款/充值卡" />
+
+            <View style="@style/View.Line" />
+
+            <RadioGroup style="@style/RadioGroup.Pay">
+
+                <CheckBox
+                    android:id="@+id/depositCheckBox"
+                    style="@style/CheckBox.Pay"
+                    android:text="使用预存款" />
+
+                <CheckBox
+                    android:id="@+id/rechargeableCheckBox"
+                    style="@style/CheckBox.Pay"
+                    android:text="使用充值卡" />
+
+                <EditText
+                    android:id="@+id/payPassEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:hint="请输入支付密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+            </RadioGroup>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/TextView.ItemStoreName"
+                android:text="支付方式" />
+
+            <View style="@style/View.Line" />
+
+            <RadioGroup style="@style/RadioGroup.Pay">
+
+                <RadioButton
+                    android:id="@+id/aliPayRadioButton"
+                    style="@style/RadioButton.Pay" />
+
+                <RadioButton
+                    android:id="@+id/wxPayRadioButton"
+                    style="@style/RadioButton.Pay"
+                    android:drawableEnd="@mipmap/ic_pay_wx"
+                    android:drawableRight="@mipmap/ic_pay_wx"
+                    android:text="微信支付" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/payTextView"
+        style="@style/TextView.GoodsBuy"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:text="去支付" />
+
+</RelativeLayout>

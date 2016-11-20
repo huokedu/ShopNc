@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Item"
+    android:background="@null">
+
+    <ImageView
+        android:id="@+id/mainImageView"
+        style="@style/ImageView.ItemGoodsVer"
+        android:layout_width="64dip"
+        android:layout_height="64dip" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/TextView.ItemGoodsName"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toLeftOf="@+id/infoTextView"
+        android:layout_toRightOf="@+id/mainImageView"
+        android:layout_toStartOf="@+id/infoTextView"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        style="@style/TextView.ItemGoodsInfo"
+        android:gravity="center|end" />
+
+</RelativeLayout>

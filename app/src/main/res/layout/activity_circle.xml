@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Layout.Main">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_main" />
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarInclude" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/createButton"
+        style="@style/Button.Release"
+        app:backgroundTint="@color/main" />
+
+</RelativeLayout>

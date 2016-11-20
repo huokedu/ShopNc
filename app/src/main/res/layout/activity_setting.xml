@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <TextView
+        android:id="@+id/clearCacheTextView"
+        style="@style/TextView.Setting"
+        android:text="清除缓存" />
+
+    <View style="@style/View.Line" />
+
+    <TextView
+        android:id="@+id/checkNetworkTextView"
+        style="@style/TextView.Setting"
+        android:text="网络检测" />
+
+    <View style="@style/View.Line" />
+
+    <TextView
+        android:id="@+id/useHelpTextView"
+        style="@style/TextView.Setting"
+        android:text="使用帮助" />
+
+    <View style="@style/View.Line" />
+
+    <TextView
+        android:id="@+id/aboutTextView"
+        style="@style/TextView.Setting"
+        android:text="关于我们" />
+
+</LinearLayout>

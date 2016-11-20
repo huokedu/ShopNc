@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Item7">
+
+    <TextView
+        android:id="@+id/statusTextView"
+        style="@style/TextView.ItemAddressName"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/moneyTextView"
+        android:layout_toStartOf="@+id/moneyTextView"
+        android:textColor="@color/greyAdd" />
+
+    <TextView
+        android:id="@+id/moneyTextView"
+        style="@style/TextView.ItemPricePromotion"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/snTextView"
+        style="@style/TextView.ItemAddressName"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/statusTextView"
+        android:layout_toLeftOf="@+id/timeTextView"
+        android:layout_toStartOf="@+id/timeTextView"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        style="@style/TextView.ItemAddressName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/moneyTextView"
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+
+    <View
+        style="@style/View.Line"
+        android:layout_below="@+id/snTextView"
+        android:layout_marginTop="8dip" />
+
+</RelativeLayout>

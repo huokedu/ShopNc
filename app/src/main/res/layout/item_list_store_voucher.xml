@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Item7">
+
+    <ImageView
+        android:id="@+id/mainImageView"
+        android:layout_width="68dip"
+        android:layout_height="68dip"
+        android:layout_marginEnd="8dip"
+        android:layout_marginRight="8dip"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/mainTextView"
+        style="@style/TextView.ItemMain"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toRightOf="@+id/mainImageView" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        style="@style/TextView.ItemInfo"
+        android:layout_below="@+id/mainTextView"
+        android:layout_marginTop="4dip"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toRightOf="@+id/mainImageView" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        style="@style/TextView.ItemInfo"
+        android:layout_below="@+id/infoTextView"
+        android:layout_marginTop="4dip"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toRightOf="@+id/mainImageView" />
+
+    <TextView
+        android:id="@+id/getTextView"
+        style="@style/TextView.GoodsActivity1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="领取" />
+
+    <View
+        style="@style/View.Line"
+        android:layout_below="@+id/mainImageView"
+        android:layout_marginTop="8dip" />
+
+</RelativeLayout>

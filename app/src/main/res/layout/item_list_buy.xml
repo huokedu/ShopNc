@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Item4">
+
+    <TextView
+        android:id="@+id/storeTextView"
+        style="@style/TextView.ItemStoreName" />
+
+    <View style="@style/View.Line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mainListView"
+        style="@style/ListView.Main" />
+
+    <View style="@style/View.Line" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        style="@style/TextView.TitleRight" />
+
+    <View style="@style/View.Line" />
+
+    <EditText
+        android:id="@+id/messageEditText"
+        style="@style/EditText.OrderMessage" />
+
+    <View
+        style="@style/View.Line"
+        android:layout_height="8dip" />
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView style="@style/ScrollView.Main">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <RelativeLayout
+                android:id="@+id/storeRelativeLayout"
+                style="@style/Layout.HeightWrap"
+                android:background="@mipmap/bg_store"
+                android:paddingBottom="24dip"
+                android:paddingLeft="16dip"
+                android:paddingRight="16dip"
+                android:paddingTop="24dip">
+
+                <ImageView
+                    android:id="@+id/avatarImageView"
+                    style="@style/ImageView.Base" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/TextView.Username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/avatarImageView"
+                    android:layout_marginTop="12dip" />
+
+                <TextView
+                    android:id="@+id/collectTextView"
+                    style="@style/TextView.StoreFav"
+                    android:layout_alignBottom="@+id/nameTextView"
+                    android:layout_toLeftOf="@+id/collectNumTextView"
+                    android:layout_toStartOf="@+id/collectNumTextView" />
+
+                <TextView
+                    android:id="@+id/collectNumTextView"
+                    style="@style/TextView.StoreFav"
+                    android:layout_alignBottom="@+id/nameTextView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:id="@+id/creditTextView"
+                    style="@style/TextView.StoreCredit"
+                    android:layout_above="@+id/collectNumTextView"
+                    android:layout_alignEnd="@id/collectNumTextView"
+                    android:layout_alignRight="@+id/collectNumTextView"
+                    android:layout_marginBottom="8dip" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line8" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="店铺名称" />
+
+                <TextView
+                    android:id="@+id/storeNameTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="所在地区" />
+
+                <TextView
+                    android:id="@+id/storeAreaTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="开店时间" />
+
+                <TextView
+                    android:id="@+id/storeTimeTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="主营商品" />
+
+                <TextView
+                    android:id="@+id/storeZYSPTextView"
+                    style="@style/TextView.ToolValue"
+                    android:paddingLeft="8dip"
+                    android:paddingStart="8dip" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="店铺商品" />
+
+                <TextView
+                    android:id="@+id/storeGoodsTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line8" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="联系电话" />
+
+                <TextView
+                    android:id="@+id/storePhoneTextView"
+                    style="@style/TextView.ToolValue"
+                    android:drawableEnd="@mipmap/ic_dot_right"
+                    android:drawablePadding="8dip"
+                    android:drawableRight="@mipmap/ic_dot_right" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:text="联系 Q Q" />
+
+                <TextView
+                    android:id="@+id/storeQQTextView"
+                    style="@style/TextView.ToolValue"
+                    android:drawableEnd="@mipmap/ic_dot_right"
+                    android:drawablePadding="8dip"
+                    android:drawableRight="@mipmap/ic_dot_right" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

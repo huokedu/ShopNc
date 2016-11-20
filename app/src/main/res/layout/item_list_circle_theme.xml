@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Item7">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/TextView.ItemCircleName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/timeTextView"
+        android:layout_toStartOf="@+id/timeTextView"
+        android:maxLines="1"
+        android:textColor="@color/blackSub"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        style="@style/TextView.ItemCircleName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/contentTextView"
+        style="@style/TextView.ItemCircleContent"
+        android:layout_below="@+id/nameTextView"
+        android:layout_marginTop="8dip"
+        android:textColor="@color/greyAdd" />
+
+    <TextView
+        android:id="@+id/speakTextView"
+        style="@style/TextView.ItemCircleName"
+        android:layout_below="@+id/contentTextView"
+        android:layout_marginTop="8dip"
+        android:drawableLeft="@mipmap/ic_circle_speak"
+        android:drawablePadding="4dip"
+        android:drawableStart="@mipmap/ic_circle_speak"
+        android:textColor="@color/greyAdd"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/browserTextView"
+        style="@style/TextView.ItemCircleName"
+        android:layout_alignTop="@+id/speakTextView"
+        android:layout_toLeftOf="@+id/likeTextView"
+        android:layout_toStartOf="@+id/likeTextView"
+        android:drawableLeft="@mipmap/ic_circle_browser"
+        android:drawablePadding="4dip"
+        android:drawableStart="@mipmap/ic_circle_browser"
+        android:textColor="@color/greyAdd"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/likeTextView"
+        style="@style/TextView.ItemCircleName"
+        android:layout_alignTop="@+id/speakTextView"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_toLeftOf="@+id/commentTextView"
+        android:layout_toStartOf="@+id/commentTextView"
+        android:drawableLeft="@mipmap/ic_circle_like_no"
+        android:drawablePadding="4dip"
+        android:drawableStart="@mipmap/ic_circle_like_no"
+        android:textColor="@color/greyAdd"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/commentTextView"
+        style="@style/TextView.ItemCircleName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/speakTextView"
+        android:drawableLeft="@mipmap/ic_circle_reply"
+        android:drawablePadding="4dip"
+        android:drawableStart="@mipmap/ic_circle_reply"
+        android:textColor="@color/greyAdd"
+        android:textSize="12sp" />
+
+    <View
+        style="@style/View.Line"
+        android:layout_below="@+id/speakTextView"
+        android:layout_marginTop="8dip" />
+
+</RelativeLayout>

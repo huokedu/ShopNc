@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <View style="@style/View.Line8" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="名称" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            style="@style/EditText.EditInfo"
+            android:gravity="center_vertical"
+            android:hint="主题名称" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:layout_height="80dip"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:layout_height="80dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="内容" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/contentEditText"
+            style="@style/EditText.EditInfo"
+            android:layout_height="80dip"
+            android:gravity="center_vertical"
+            android:hint="主题内容"
+            android:inputType="none" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line8" />
+
+    <TextView
+        android:id="@+id/createTextView"
+        style="@style/TextView.Button1"
+        android:layout_margin="0dip"
+        android:text="创建主题" />
+
+</LinearLayout>

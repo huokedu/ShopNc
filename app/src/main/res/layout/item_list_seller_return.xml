@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mainLinearLayout"
+    style="@style/Layout.Item10">
+
+    <RelativeLayout style="@style/Layout.HeightWrap">
+
+        <TextView
+            android:id="@+id/usernameTextView"
+            style="@style/TextView.ItemStoreName"
+            android:drawableEnd="@null"
+            android:drawableRight="@null" />
+
+        <TextView
+            android:id="@+id/stateTextView"
+            style="@style/TextView.ItemOrderState" />
+
+    </RelativeLayout>
+
+    <View style="@style/View.Line" />
+
+    <RelativeLayout style="@style/Layout.HeightWrap">
+
+        <TextView
+            android:id="@+id/orderSNTextView"
+            style="@style/TextView.TitleRight"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dip"
+            android:paddingTop="16dip" />
+
+        <TextView
+            android:id="@+id/refundSNTextView"
+            style="@style/TextView.TitleRight"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderSNTextView"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dip"
+            android:paddingTop="8dip" />
+
+        <TextView
+            android:id="@+id/moneyTextView"
+            style="@style/TextView.ItemPricePromotion"
+            android:layout_alignBottom="@id/refundSNTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/orderSNTextView"
+            android:layout_marginEnd="16dip"
+            android:layout_marginRight="16dip" />
+
+    </RelativeLayout>
+
+    <View style="@style/View.Line" />
+
+    <RelativeLayout style="@style/Layout.Item">
+
+        <TextView
+            android:id="@+id/handlerTextView"
+            style="@style/TextView.Button"
+            android:text="去处理" />
+
+        <TextView
+            android:id="@+id/detailedTextView"
+            style="@style/TextView.Button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="退货详细" />
+
+    </RelativeLayout>
+
+</LinearLayout>

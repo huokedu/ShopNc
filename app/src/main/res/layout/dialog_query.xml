@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Dialog">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/TextView.TitleDialog" />
+
+    <View style="@style/View.Line" />
+
+    <TextView
+        android:id="@+id/contentTextView"
+        style="@style/TextView.ContentDialog" />
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        style="@style/Layout.LinearHor"
+        android:layout_height="48dip">
+
+        <TextView
+            android:id="@+id/cancelTextView"
+            style="@style/TextView.CancelDialog" />
+
+        <View style="@style/View.LineHor" />
+
+        <TextView
+            android:id="@+id/confirmTextView"
+            style="@style/TextView.ConfirmDialog" />
+
+    </LinearLayout>
+
+</LinearLayout>

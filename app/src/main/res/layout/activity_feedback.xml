@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <View style="@style/View.Line12" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        style="@style/EditText.OrderMessage"
+        android:layout_height="128dip"
+        android:gravity="start" />
+
+    <TextView
+        android:id="@+id/confirmTextView"
+        style="@style/TextView.Button1"
+        android:text="提交" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mLinearLayout"
+    style="@style/Layout.LinearHor"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip">
+
+    <RelativeLayout
+        android:id="@+id/hor1RelativeLayout"
+        style="@style/Layout.Goods">
+
+        <ImageView
+            android:id="@+id/hor1ImageView"
+            style="@style/ImageView.ItemGoodsHor" />
+
+        <ImageView
+            android:id="@+id/hor1BorderImageView"
+            style="@style/ImageView.ItemGoodsBorder" />
+
+        <TextView
+            android:id="@+id/hor1NameTextView"
+            style="@style/TextView.ItemGoodsName"
+            android:layout_below="@+id/hor1ImageView" />
+
+        <View
+            android:id="@+id/hor1LineView"
+            style="@style/View.Line"
+            android:layout_below="@+id/hor1NameTextView" />
+
+        <TextView
+            android:id="@+id/hor1PricePromotionTextView"
+            style="@style/TextView.ItemPricePromotion"
+            android:layout_below="@+id/hor1LineView" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/hor1PriceTextView"
+            style="@style/TextView.ItemPrice"
+            android:layout_below="@+id/hor1LineView"
+            android:layout_toEndOf="@id/hor1PricePromotionTextView"
+            android:layout_toRightOf="@+id/hor1PricePromotionTextView" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hor2RelativeLayout"
+        style="@style/Layout.Goods">
+
+        <ImageView
+            android:id="@+id/hor2ImageView"
+            style="@style/ImageView.ItemGoodsHor" />
+
+        <ImageView
+            android:id="@+id/hor2BorderImageView"
+            style="@style/ImageView.ItemGoodsBorder" />
+
+        <TextView
+            android:id="@+id/hor2NameTextView"
+            style="@style/TextView.ItemGoodsName"
+            android:layout_below="@+id/hor2ImageView" />
+
+        <View
+            android:id="@+id/hor2LineView"
+            style="@style/View.Line"
+            android:layout_below="@+id/hor2NameTextView" />
+
+        <TextView
+            android:id="@+id/hor2PricePromotionTextView"
+            style="@style/TextView.ItemPricePromotion"
+            android:layout_below="@+id/hor2LineView" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/hor2PriceTextView"
+            style="@style/TextView.ItemPrice"
+            android:layout_below="@+id/hor2LineView"
+            android:layout_toEndOf="@+id/hor2PricePromotionTextView"
+            android:layout_toRightOf="@+id/hor2PricePromotionTextView" />
+
+    </RelativeLayout>
+
+</LinearLayout>

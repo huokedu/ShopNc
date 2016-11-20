@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.HeightWrap"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/Layout.Input">
+
+        <RelativeLayout
+            style="@style/Layout.HeightWrap"
+            android:layout_width="0dp"
+            android:layout_marginLeft="8dip"
+            android:layout_marginStart="8dip"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/contentEditText"
+                style="@style/EditText.Input"
+                android:paddingEnd="32dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="32dip"
+                android:paddingStart="8dip" />
+
+            <ImageView
+                android:id="@+id/faceImageView"
+                style="@style/ImageView.Input"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_input_face_comment"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/sendImageView"
+            style="@style/ImageView.Input"
+            android:src="@mipmap/ic_send"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <include layout="@layout/include_face" />
+
+</LinearLayout>

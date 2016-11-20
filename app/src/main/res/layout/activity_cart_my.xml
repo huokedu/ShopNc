@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <include
+        android:id="@+id/mainInclude"
+        style="@style/Include.Match"
+        layout="@layout/include_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLinearLayout"
+        android:layout_below="@+id/toolbarInclude" />
+
+    <LinearLayout
+        android:id="@+id/bottomLinearLayout"
+        style="@style/Layout.LinearHor"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <View
+            style="@style/View.LineHor"
+            android:layout_width="8dip"
+            android:background="@color/white" />
+
+        <CheckBox
+            android:id="@+id/allCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/calcTextView"
+            style="@style/TextView.GoodsCalc"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="没有选中商品" />
+
+        <TextView
+            android:id="@+id/buyTextView"
+            style="@style/TextView.GoodsBuy"
+            android:layout_width="88dip" />
+
+    </LinearLayout>
+
+</RelativeLayout>

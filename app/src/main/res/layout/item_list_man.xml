@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Layout.HeightWrap"
+    android:paddingLeft="4dip"
+    android:paddingRight="4dip">
+
+    <android.support.v7.widget.CardView
+        style="@style/Layout.HeightWrap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:cardCornerRadius="2dip"
+        app:cardElevation="2dip"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/mainRelativeLayout"
+            style="@style/Layout.Card"
+            android:paddingBottom="2dip">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                style="@style/TextView.Title"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="255"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:textColor="@color/greyAdd"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/mainImageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_below="@+id/titleTextView"
+                android:layout_marginTop="12dip" />
+
+            <TextView
+                android:id="@+id/clickTextView"
+                style="@style/TextView.ItemCircleName"
+                android:layout_below="@+id/mainImageView"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="16dip"
+                android:drawableLeft="@mipmap/ic_man_click"
+                android:drawablePadding="8dip"
+                android:drawableStart="@mipmap/ic_man_click"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/praiseTextView"
+                style="@style/TextView.ItemMan"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="false"
+                android:layout_below="@+id/mainImageView"
+                android:layout_toLeftOf="@+id/shareTextView"
+                android:layout_toStartOf="@+id/shareTextView"
+                android:drawableLeft="@mipmap/ic_man_praise"
+                android:drawableStart="@mipmap/ic_man_praise" />
+
+            <TextView
+                android:id="@+id/shareTextView"
+                style="@style/TextView.ItemMan"
+                android:layout_below="@+id/mainImageView"
+                android:drawableLeft="@mipmap/ic_man_share"
+                android:drawableStart="@mipmap/ic_man_share" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

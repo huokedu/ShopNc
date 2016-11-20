@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_search" />
+
+    <com.scrollablelayout.ScrollableLayout
+        android:id="@+id/mainScrollableLayout"
+        style="@style/ScrollView.Main"
+        android:layout_above="@id/lineView"
+        android:layout_below="@+id/toolbarInclude">
+
+        <RelativeLayout
+            android:id="@+id/storeRelativeLayout"
+            style="@style/Layout.HeightWrap"
+            android:background="@mipmap/bg_store"
+            android:paddingBottom="24dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:paddingTop="24dip">
+
+            <ImageView
+                android:id="@+id/avatarImageView"
+                style="@style/ImageView.Base" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/TextView.Username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/avatarImageView"
+                android:layout_marginTop="12dip" />
+
+            <TextView
+                android:id="@+id/collectTextView"
+                style="@style/TextView.StoreFav"
+                android:layout_alignBottom="@+id/nameTextView"
+                android:layout_toLeftOf="@+id/collectNumTextView"
+                android:layout_toStartOf="@+id/collectNumTextView" />
+
+            <TextView
+                android:id="@+id/collectNumTextView"
+                style="@style/TextView.StoreFav"
+                android:layout_alignBottom="@+id/nameTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/creditTextView"
+                style="@style/TextView.StoreCredit"
+                android:layout_above="@+id/collectNumTextView"
+                android:layout_alignEnd="@id/collectNumTextView"
+                android:layout_alignRight="@+id/collectNumTextView"
+                android:layout_marginBottom="8dip" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/mainTabLayout"
+            style="@style/Layout.Tab" />
+
+        <View style="@style/View.Line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mainViewPager"
+            style="@style/ViewPager.Main" />
+
+    </com.scrollablelayout.ScrollableLayout>
+
+    <View
+        android:id="@+id/lineView"
+        style="@style/View.Line"
+        android:layout_above="@+id/bottomLinearLayout" />
+
+    <LinearLayout
+        android:id="@+id/bottomLinearLayout"
+        style="@style/Layout.LinearHor"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/infoTextView"
+            style="@style/TextView.StoreBottom"
+            android:text="店铺信息" />
+
+        <View style="@style/View.LineHor" />
+
+        <TextView
+            android:id="@+id/vouchersTextView"
+            style="@style/TextView.StoreBottom"
+            android:text="免费领券" />
+
+        <View style="@style/View.LineHor" />
+
+        <TextView
+            android:id="@+id/keFuTextView"
+            style="@style/TextView.StoreBottom"
+            android:text="联系客服" />
+
+    </LinearLayout>
+
+</RelativeLayout>

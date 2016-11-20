@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Login">
+
+    <ImageView
+        style="@style/ImageView.Avatar"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dip"
+        android:layout_marginTop="64dip" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        style="@style/EditText.Username" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        style="@style/EditText.Password" />
+
+    <EditText
+        android:id="@+id/passwordConfirmEditText"
+        style="@style/EditText.Password" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        style="@style/EditText.Email" />
+
+    <TextView
+        android:id="@+id/registerTextView"
+        style="@style/TextView.Login"
+        android:text="注 册" />
+
+</LinearLayout>

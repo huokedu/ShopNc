@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear"
+    android:paddingTop="16dip">
+
+    <EditText
+        android:id="@+id/snEditText"
+        style="@style/EditText.OrderMessage"
+        android:hint="请输入充值卡号" />
+
+    <TextView
+        android:id="@+id/confirmTextView"
+        style="@style/TextView.Button1"
+        android:text="确认" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Item7">
+
+    <ImageView
+        android:id="@+id/avatarImageView"
+        style="@style/ImageView.ChatHead"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginEnd="8dip"
+        android:layout_marginRight="8dip" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/TextView.ItemCircleName"
+        android:layout_toEndOf="@+id/avatarImageView"
+        android:layout_toLeftOf="@+id/mainTextView"
+        android:layout_toRightOf="@+id/avatarImageView"
+        android:layout_toStartOf="@+id/mainTextView"
+        android:maxLines="1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        style="@style/TextView.ItemCircleName"
+        android:layout_below="@+id/nameTextView"
+        android:layout_marginTop="2dip"
+        android:layout_toEndOf="@+id/avatarImageView"
+        android:layout_toRightOf="@+id/avatarImageView"
+        android:textColor="@color/greyAdd"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/fansTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/border_text_view_fans"
+        android:paddingBottom="4dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="4dip"
+        android:textColor="#7C8D9E"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mainTextView"
+        style="@style/TextView.GoodsActivity1"
+        android:layout_alignBottom="@id/fansTextView"
+        android:layout_alignTop="@+id/fansTextView"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_toLeftOf="@+id/fansTextView"
+        android:layout_toStartOf="@+id/fansTextView"
+        android:paddingBottom="4dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="4dip"
+        android:text="圈主"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/descTextView"
+        style="@style/TextView.ItemCircleContent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/avatarImageView"
+        android:layout_marginTop="8dip"
+        android:background="#F6F6F6"
+        android:padding="8dip"
+        android:textColor="@color/greyAdd" />
+
+    <View
+        android:id="@+id/lineView"
+        style="@style/View.Line"
+        android:layout_below="@+id/descTextView"
+        android:layout_marginTop="8dip" />
+
+</RelativeLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.HeightWrap">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/TextView.ItemCategory2Title" />
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content1TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content2TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content3TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content4TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content5TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content6TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content7TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content8TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content9TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content10TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content11TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content12TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content13TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content14TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content15TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content16TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content17TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content18TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content19TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content20TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content21TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content22TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content23TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content24TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content25TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content26TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content27TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content28TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content29TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content30TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content31TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content32TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content33TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content34TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content35TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content36TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content37TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content38TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content39TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content40TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content41TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content42TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content43TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content44TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content45TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content46TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content47TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content48TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+    <TableRow android:paddingRight="8dip">
+
+        <TextView
+            android:id="@+id/content49TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content50TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+        <TextView
+            android:id="@+id/content51TextView"
+            style="@style/TextView.ItemCategory2Content" />
+
+    </TableRow>
+
+</TableLayout>

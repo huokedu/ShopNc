@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Toolbar"
+    android:background="@color/main">
+
+    <ImageView
+        android:id="@+id/scanImageView"
+        style="@style/ImageView.Toolbar"
+        android:src="@mipmap/ic_action_scan" />
+
+    <EditText
+        android:id="@+id/keywordEditText"
+        style="@style/EditText.Search" />
+
+    <ImageView
+        android:id="@+id/messageImageView"
+        style="@style/ImageView.Toolbar"
+        android:src="@mipmap/ic_action_message" />
+
+</LinearLayout>

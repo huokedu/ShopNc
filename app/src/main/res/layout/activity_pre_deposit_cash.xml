@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView style="@style/ScrollView.Main">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <RelativeLayout
+                style="@style/Layout.HeightWrap"
+                android:layout_height="wrap_content"
+                android:background="@color/main"
+                android:paddingBottom="16dip"
+                android:paddingTop="8dip">
+
+                <ImageView
+                    android:id="@+id/moneyImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/ic_property_money" />
+
+                <TextView
+                    android:id="@+id/moneyTextView"
+                    style="@style/TextView.White"
+                    android:layout_below="@+id/moneyImageView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dip"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/Layout.Tool"
+                android:padding="0dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="16dip"
+                    android:text="提现金额" />
+
+                <View style="@style/View.LineHor" />
+
+                <EditText
+                    android:id="@+id/moneyEditText"
+                    style="@style/EditText.Tool" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                style="@style/Layout.Tool"
+                android:padding="0dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="16dip"
+                    android:text="收款银行" />
+
+                <View style="@style/View.LineHor" />
+
+                <EditText
+                    android:id="@+id/bankNameEditText"
+                    style="@style/EditText.Tool"
+                    android:hint="虚拟账户请填写微信支付或支付宝" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                style="@style/Layout.Tool"
+                android:padding="0dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="16dip"
+                    android:text="收款账号" />
+
+                <View style="@style/View.LineHor" />
+
+                <EditText
+                    android:id="@+id/bankCardEditText"
+                    style="@style/EditText.Tool"
+                    android:hint="银行账号或虚拟账号(支付宝、财付通等账号)" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                style="@style/Layout.Tool"
+                android:padding="0dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="16dip"
+                    android:text="开户姓名" />
+
+                <View style="@style/View.LineHor" />
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    style="@style/EditText.Tool"
+                    android:hint="账户的姓名" />
+
+            </LinearLayout>
+
+            <View style="@style/View.Line" />
+
+            <LinearLayout
+                style="@style/Layout.Tool"
+                android:padding="0dip">
+
+                <TextView
+                    style="@style/TextView.ToolTitle"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="16dip"
+                    android:text="支付密码" />
+
+                <View style="@style/View.LineHor" />
+
+                <EditText
+                    android:id="@+id/payPassEditText"
+                    style="@style/EditText.Tool"
+                    android:hint="您的支付密码"
+                    android:inputType="textPassword" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/confirmTextView"
+                style="@style/TextView.Button1"
+                android:text="确认提现" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

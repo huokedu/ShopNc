@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mLinearLayout"
+    style="@style/Layout.LinearHor"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip">
+
+    <RelativeLayout
+        android:id="@+id/hor1RelativeLayout"
+        style="@style/Layout.Goods">
+
+        <ImageView
+            android:id="@+id/hor1ImageView"
+            style="@style/ImageView.ItemGoodsHor" />
+
+        <TextView
+            android:id="@+id/hor1NameTextView"
+            style="@style/TextView.ItemGoodsName"
+            android:layout_below="@+id/hor1ImageView" />
+
+        <View
+            android:id="@+id/hor11LineView"
+            style="@style/View.Line"
+            android:layout_below="@+id/hor1NameTextView" />
+
+        <TextView
+            android:id="@+id/hor1PricePromotionTextView"
+            style="@style/TextView.ItemPricePromotion"
+            android:layout_below="@+id/hor11LineView" />
+
+        <TextView
+            android:id="@+id/hor1PriceTextView"
+            style="@style/TextView.ItemPrice"
+            android:layout_below="@+id/hor11LineView"
+            android:layout_toEndOf="@id/hor1PricePromotionTextView"
+            android:layout_toRightOf="@+id/hor1PricePromotionTextView" />
+
+        <View
+            android:id="@+id/hor12LineView"
+            style="@style/View.Line"
+            android:layout_below="@+id/hor1PriceTextView" />
+
+        <ImageView
+            android:id="@+id/hor1AvatarImageView"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_below="@+id/hor12LineView"
+            android:layout_marginBottom="4dip"
+            android:layout_marginEnd="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="4dip"
+            android:src="@mipmap/ic_avatar" />
+
+        <TextView
+            android:id="@+id/hor1UsernameTextView"
+            style="@style/TextView.ItemGoodsName"
+            android:layout_alignTop="@+id/hor1AvatarImageView"
+            android:layout_toEndOf="@+id/hor1AvatarImageView"
+            android:layout_toRightOf="@+id/hor1AvatarImageView"
+            android:padding="0dip"
+            android:textColor="@color/greyAdd" />
+
+        <TextView
+            android:id="@+id/hor1TimeTextView"
+            style="@style/TextView.ItemGoodsName"
+            android:layout_below="@+id/hor1UsernameTextView"
+            android:layout_marginTop="2dip"
+            android:layout_toEndOf="@+id/hor1AvatarImageView"
+            android:layout_toRightOf="@+id/hor1AvatarImageView"
+            android:padding="0dip"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/hor13LineView"
+            style="@style/View.Line"
+            android:layout_below="@+id/hor1AvatarImageView" />
+
+        <TextView
+            android:id="@+id/hor1ContentTextView"
+            style="@style/TextView.ItemGoodsName"
+            android:layout_below="@+id/hor13LineView"
+            android:maxLines="2"
+            android:textColor="@color/greyAdd" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hor2RelativeLayout"
+        style="@style/Layout.Goods">
+
+        <ImageView
+            android:id="@+id/hor2ImageView"
+            style="@style/ImageView.ItemGoodsHor" />
+
+        <TextView
+            android:id="@+id/hor2NameTextView"
+            style="@style/TextView.ItemGoodsName"
+            android:layout_below="@+id/hor2ImageView" />
+
+        <View
+            android:id="@+id/hor21LineView"
+            style="@style/View.Line"
+            android:layout_below="@+id/hor2NameTextView" />
+
+        <TextView
+            android:id="@+id/hor2PricePromotionTextView"
+            style="@style/TextView.ItemPricePromotion"
+            android:layout_below="@+id/hor21LineView" />
+
+        <TextView
+            android:id="@+id/hor2PriceTextView"
+            style="@style/TextView.ItemPrice"
+            android:layout_below="@+id/hor21LineView"
+            android:layout_toEndOf="@+id/hor2PricePromotionTextView"
+            android:layout_toRightOf="@+id/hor2PricePromotionTextView" />
+
+        <View
+            android:id="@+id/hor22LineView"
+            style="@style/View.Line"
+            android:layout_below="@+id/hor2PriceTextView" />
+
+        <ImageView
+            android:id="@+id/hor2AvatarImageView"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_below="@+id/hor22LineView"
+            android:layout_marginBottom="4dip"
+            android:layout_marginEnd="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="4dip"
+            android:src="@mipmap/ic_avatar" />
+
+        <TextView
+            android:id="@+id/hor2UsernameTextView"
+            style="@style/TextView.ItemGoodsName"
+            android:layout_alignTop="@+id/hor2AvatarImageView"
+            android:layout_toEndOf="@+id/hor2AvatarImageView"
+            android:layout_toRightOf="@+id/hor2AvatarImageView"
+            android:padding="0dip"
+            android:textColor="@color/greyAdd" />
+
+        <TextView
+            android:id="@+id/hor2TimeTextView"
+            style="@style/TextView.ItemGoodsName"
+            android:layout_below="@+id/hor2UsernameTextView"
+            android:layout_marginTop="2dip"
+            android:layout_toEndOf="@+id/hor2AvatarImageView"
+            android:layout_toRightOf="@+id/hor2AvatarImageView"
+            android:padding="0dip"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/hor23LineView"
+            style="@style/View.Line"
+            android:layout_below="@+id/hor2AvatarImageView" />
+
+        <TextView
+            android:id="@+id/hor2ContentTextView"
+            style="@style/TextView.ItemGoodsName"
+            android:layout_below="@+id/hor23LineView"
+            android:maxLines="2"
+            android:textColor="@color/greyAdd" />
+
+    </RelativeLayout>
+
+</LinearLayout>

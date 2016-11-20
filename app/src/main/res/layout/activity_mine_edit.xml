@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <View style="@style/View.Line12" />
+
+    <RelativeLayout
+        android:id="@+id/avatarRelativeLayout"
+        style="@style/Layout.Tool"
+        android:layout_height="96dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:layout_height="match_parent"
+            android:text="头像" />
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_avatar" />
+
+    </RelativeLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        android:id="@+id/nameLinearLayout"
+        style="@style/Layout.Tool">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:text="姓名" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            style="@style/TextView.ToolValue" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        android:id="@+id/sexLinearLayout"
+        style="@style/Layout.Tool">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:text="性别" />
+
+        <TextView
+            android:id="@+id/sexTextView"
+            style="@style/TextView.ToolValue" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        android:id="@+id/qqLinearLayout"
+        style="@style/Layout.Tool">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:text="Q  Q" />
+
+        <TextView
+            android:id="@+id/qqTextView"
+            style="@style/TextView.ToolValue" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        android:id="@+id/wwLinearLayout"
+        style="@style/Layout.Tool">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:text="旺旺" />
+
+        <TextView
+            android:id="@+id/wwTextView"
+            style="@style/TextView.ToolValue" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        android:id="@+id/birthdayLinearLayout"
+        style="@style/Layout.Tool">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:text="生日" />
+
+        <TextView
+            android:id="@+id/birthdayTextView"
+            style="@style/TextView.ToolValue" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        android:id="@+id/areaLinearLayout"
+        style="@style/Layout.Tool">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:text="地区" />
+
+        <TextView
+            android:id="@+id/areaTextView"
+            style="@style/TextView.ToolValue" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/saveTextView"
+        style="@style/TextView.Button1"
+        android:text="保存修改" />
+
+</LinearLayout>

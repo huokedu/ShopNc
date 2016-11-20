@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Item9">
+
+    <TextView
+        android:id="@+id/lineTextView"
+        style="@style/TextView.ItemNotifyLine"
+        android:layout_alignBottom="@+id/contentTextView" />
+
+    <TextView
+        android:id="@+id/dotTextView"
+        style="@style/TextView.ItemNotifyDot" />
+
+    <TextView
+        android:id="@+id/contentTextView"
+        style="@style/TextView.ItemNotifyContent"
+        android:layout_toEndOf="@+id/lineTextView"
+        android:layout_toRightOf="@+id/lineTextView" />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <View style="@style/View.Line8" />
+
+    <LinearLayout style="@style/Layout.Tool">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:text="发票类型：" />
+
+        <Spinner
+            android:id="@+id/typeSpinner"
+            style="@style/Spinner.Tool" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout style="@style/Layout.Tool">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:text="发票内容：" />
+
+        <Spinner
+            android:id="@+id/contentSpinner"
+            style="@style/Spinner.Tool" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <EditText
+        android:id="@+id/headEditText"
+        style="@style/EditText.Address"
+        android:hint="请输入发票抬头" />
+
+    <View style="@style/View.Line8" />
+
+    <TextView
+        android:id="@+id/addTextView"
+        style="@style/TextView.Button1"
+        android:layout_margin="0dip"
+        android:text="添加发票" />
+
+</LinearLayout>

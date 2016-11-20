@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Main">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/mainMapView"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:layout_below="@+id/toolbarInclude" />
+
+    <AutoCompleteTextView
+        android:id="@+id/keywordEditText"
+        style="@style/EditText.Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarInclude"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="56dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/border_edit_text_search_map"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip"
+        android:textColor="@color/greyAdd"
+        android:textColorHint="@color/grey"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/searchImageView"
+        style="@style/ImageView.Toolbar"
+        android:layout_width="40dip"
+        android:layout_alignBottom="@+id/keywordEditText"
+        android:layout_alignEnd="@+id/keywordEditText"
+        android:layout_alignRight="@+id/keywordEditText"
+        android:layout_alignTop="@+id/keywordEditText"
+        android:background="@color/transparent"
+        android:src="@mipmap/ic_send_default" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dip"
+        android:src="@mipmap/ic_mark" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mainListView"
+        style="@style/ListView.Main"
+        android:layout_below="@+id/mainMapView" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Item7">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/TextView.ItemAddressName" />
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        style="@style/TextView.ItemAddressPhone"
+        android:layout_toEndOf="@+id/nameTextView"
+        android:layout_toRightOf="@+id/nameTextView" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        style="@style/TextView.ItemAddressArea"
+        android:layout_below="@+id/nameTextView" />
+
+    <View
+        style="@style/View.Line"
+        android:layout_below="@+id/addressTextView"
+        android:layout_marginTop="8dip" />
+
+</RelativeLayout>

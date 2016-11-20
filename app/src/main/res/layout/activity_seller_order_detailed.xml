@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Main">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView
+        android:id="@+id/mainScrollView"
+        style="@style/ScrollView.Main"
+        android:layout_above="@+id/lineView"
+        android:layout_below="@+id/toolbarInclude">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/TextView.ItemStoreName"
+                android:layout_height="40dip"
+                android:drawableEnd="@null"
+                android:drawableRight="@null"
+                android:text="订单信息" />
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                style="@style/Layout.HeightWrap"
+                android:layout_height="40dip">
+
+                <TextView
+                    style="@style/TextView.ItemStoreName"
+                    android:drawableEnd="@null"
+                    android:drawableLeft="@null"
+                    android:drawableRight="@null"
+                    android:drawableStart="@null"
+                    android:text="订单编号" />
+
+                <TextView
+                    android:id="@+id/orderSNTextView"
+                    style="@style/TextView.ItemOrderState"
+                    android:drawableEnd="@null"
+                    android:drawableRight="@null" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                style="@style/Layout.HeightWrap"
+                android:layout_height="40dip">
+
+                <TextView
+                    style="@style/TextView.ItemStoreName"
+                    android:drawableEnd="@null"
+                    android:drawableLeft="@null"
+                    android:drawableRight="@null"
+                    android:drawableStart="@null"
+                    android:text="支付编号" />
+
+                <TextView
+                    android:id="@+id/paySNTextView"
+                    style="@style/TextView.ItemOrderState"
+                    android:drawableEnd="@null"
+                    android:drawableRight="@null" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                style="@style/Layout.HeightWrap"
+                android:layout_height="40dip">
+
+                <TextView
+                    style="@style/TextView.ItemStoreName"
+                    android:drawableEnd="@null"
+                    android:drawableLeft="@null"
+                    android:drawableRight="@null"
+                    android:drawableStart="@null"
+                    android:text="支付方式" />
+
+                <TextView
+                    android:id="@+id/paymentTextView"
+                    style="@style/TextView.ItemOrderState"
+                    android:drawableEnd="@null"
+                    android:drawableRight="@null" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                style="@style/Layout.HeightWrap"
+                android:layout_height="40dip">
+
+                <TextView
+                    style="@style/TextView.ItemStoreName"
+                    android:drawableEnd="@null"
+                    android:drawableLeft="@null"
+                    android:drawableRight="@null"
+                    android:drawableStart="@null"
+                    android:text="交易状态" />
+
+                <TextView
+                    android:id="@+id/stateTextView"
+                    style="@style/TextView.ItemOrderState"
+                    android:drawableEnd="@null"
+                    android:drawableRight="@null" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                style="@style/Layout.HeightWrap"
+                android:layout_height="40dip">
+
+                <TextView
+                    style="@style/TextView.ItemStoreName"
+                    android:drawableEnd="@null"
+                    android:drawableLeft="@null"
+                    android:drawableRight="@null"
+                    android:drawableStart="@null"
+                    android:text="创建时间" />
+
+                <TextView
+                    android:id="@+id/addTimeTextView"
+                    style="@style/TextView.ItemOrderState"
+                    android:drawableEnd="@null"
+                    android:drawableRight="@null" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                android:id="@+id/payTimeRelativeLayout"
+                style="@style/Layout.HeightWrap"
+                android:layout_height="40dip">
+
+                <TextView
+                    style="@style/TextView.ItemStoreName"
+                    android:drawableEnd="@null"
+                    android:drawableLeft="@null"
+                    android:drawableRight="@null"
+                    android:drawableStart="@null"
+                    android:text="付款时间" />
+
+                <TextView
+                    android:id="@+id/payTimeTextView"
+                    style="@style/TextView.ItemOrderState"
+                    android:drawableEnd="@null"
+                    android:drawableRight="@null" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                android:id="@+id/completeTimeRelativeLayout"
+                style="@style/Layout.HeightWrap"
+                android:layout_height="40dip">
+
+                <TextView
+                    style="@style/TextView.ItemStoreName"
+                    android:drawableEnd="@null"
+                    android:drawableLeft="@null"
+                    android:drawableRight="@null"
+                    android:drawableStart="@null"
+                    android:text="完成时间" />
+
+                <TextView
+                    android:id="@+id/completeTimeTextView"
+                    style="@style/TextView.ItemOrderState"
+                    android:drawableEnd="@null"
+                    android:drawableRight="@null" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/TextView.ItemStoreName"
+                android:layout_height="40dip"
+                android:drawableEnd="@null"
+                android:drawableRight="@null"
+                android:text="收货地址" />
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                style="@style/Layout.Item7"
+                android:paddingBottom="8dip">
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/TextView.ItemAddressName" />
+
+                <TextView
+                    android:id="@+id/phoneTextView"
+                    style="@style/TextView.ItemAddressPhone"
+                    android:layout_toEndOf="@+id/nameTextView"
+                    android:layout_toRightOf="@+id/nameTextView" />
+
+                <TextView
+                    android:id="@+id/addressTextView"
+                    style="@style/TextView.ItemAddressArea"
+                    android:layout_below="@+id/nameTextView" />
+
+            </RelativeLayout>
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/TextView.ItemStoreName"
+                android:layout_height="40dip"
+                android:drawableEnd="@null"
+                android:drawableRight="@null"
+                android:text="买家留言" />
+
+            <View style="@style/View.Line" />
+
+            <EditText
+                android:id="@+id/messageEditText"
+                style="@style/EditText.OrderMessage"
+                android:enabled="false" />
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                style="@style/TextView.ItemStoreName"
+                android:layout_height="40dip"
+                android:drawableEnd="@null"
+                android:drawableRight="@null"
+                android:text="发票信息" />
+
+            <View style="@style/View.Line" />
+
+            <EditText
+                android:id="@+id/invoiceEditText"
+                style="@style/EditText.OrderMessage"
+                android:enabled="false" />
+
+            <View style="@style/View.Line8" />
+
+            <TextView
+                android:id="@+id/storeTextView"
+                style="@style/TextView.ItemStoreName"
+                android:layout_height="40dip"
+                android:drawableEnd="@null"
+                android:drawableRight="@null" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mainListView"
+                style="@style/ListView.Main" />
+
+            <TextView
+                android:id="@+id/infoTextView"
+                style="@style/TextView.TitleRight"
+                android:layout_height="40dip" />
+
+            <View style="@style/View.Line8" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/lineView"
+        style="@style/View.Line"
+        android:layout_above="@+id/bottomLinearLayout" />
+
+    <LinearLayout
+        android:id="@+id/bottomLinearLayout"
+        style="@style/Layout.LinearHor"
+        android:layout_alignParentBottom="true">
+
+        <top.yokey.nsg.control.CenterTextView
+            android:id="@+id/bottom0TextView"
+            style="@style/TextView.GoodsBottom"
+            android:drawableLeft="@mipmap/ic_message"
+            android:drawableStart="@mipmap/ic_message"
+            android:gravity="center_vertical"
+            android:text="聊天" />
+
+        <View style="@style/View.LineHor" />
+
+        <top.yokey.nsg.control.CenterTextView
+            android:id="@+id/bottom1TextView"
+            style="@style/TextView.GoodsBottom"
+            android:drawableLeft="@mipmap/ic_cart"
+            android:drawableStart="@mipmap/ic_cart"
+            android:gravity="center_vertical"
+            android:text="电话" />
+
+        <TextView
+            android:id="@+id/bottom2TextView"
+            style="@style/TextView.GoodsBottom"
+            android:background="@color/main"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/bottom3TextView"
+            style="@style/TextView.GoodsBottom"
+            android:background="@color/red"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

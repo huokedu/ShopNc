@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Item7">
+
+    <ImageView
+        android:id="@+id/mainImageView"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_marginEnd="8dip"
+        android:layout_marginRight="8dip"
+        android:src="@mipmap/ic_default_circle" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/TextView.ItemCircleName"
+        android:layout_toEndOf="@+id/mainImageView"
+        android:layout_toRightOf="@+id/mainImageView"
+        android:textColor="@color/circle" />
+
+    <TextView
+        android:id="@+id/lineTextView"
+        style="@style/TextView.ItemCircleLine"
+        android:layout_width="10dip"
+        android:layout_alignEnd="@+id/nameTextView"
+        android:layout_alignLeft="@+id/nameTextView"
+        android:layout_alignRight="@+id/nameTextView"
+        android:layout_alignStart="@+id/nameTextView"
+        android:layout_below="@+id/nameTextView" />
+
+    <TextView
+        android:id="@+id/line2TextView"
+        style="@style/TextView.ItemCircleLine"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/nameTextView"
+        android:layout_toEndOf="@+id/lineTextView"
+        android:layout_toRightOf="@+id/lineTextView"
+        android:background="@color/whiteAdd" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        style="@style/TextView.ItemCircleInfo"
+        android:layout_alignLeft="@+id/nameTextView"
+        android:layout_alignStart="@+id/nameTextView"
+        android:layout_below="@+id/lineTextView" />
+
+    <TextView
+        android:id="@+id/descTextView"
+        style="@style/TextView.ItemCircleContent"
+        android:layout_alignLeft="@+id/nameTextView"
+        android:layout_alignStart="@+id/nameTextView"
+        android:layout_below="@+id/infoTextView" />
+
+    <View
+        style="@style/View.Line"
+        android:layout_below="@+id/mainImageView"
+        android:layout_marginTop="8dip" />
+
+</RelativeLayout>

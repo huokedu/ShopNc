@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/faceLinearLayout"
+    style="@style/Layout.HeightWrap"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/Layout.LinearHor">
+
+        <ImageView
+            android:id="@+id/e000ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e000"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e001ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e001"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e002ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e002"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e003ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e003"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e004ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e004"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e005ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e005"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e006ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e006"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e007ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e007"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/Layout.LinearHor">
+
+        <ImageView
+            android:id="@+id/e008ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e008"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e009ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e009"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e010ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e010"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e011ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e011"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e012ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e012"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e013ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e013"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e014ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e014"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e015ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e015"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/Layout.LinearHor">
+
+        <ImageView
+            android:id="@+id/e016ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e016"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e017ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e017"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e018ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e018"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e019ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e019"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e020ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e020"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e021ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e021"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e022ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e022"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e023ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e023"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/Layout.LinearHor">
+
+        <ImageView
+            android:id="@+id/e024ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e024"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e025ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e025"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e026ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e026"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e027ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e027"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e028ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e028"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e029ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e029"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e030ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e030"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e031ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e031"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/Layout.LinearHor">
+
+        <ImageView
+            android:id="@+id/e032ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e032"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e033ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e033"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e034ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e034"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e035ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e035"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e036ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e036"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e037ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e037"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e038ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e038"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e039ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e039"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/Layout.LinearHor">
+
+        <ImageView
+            android:id="@+id/e040ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e040"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e041ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e041"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e042ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e042"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e043ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e043"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e044ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e044"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e045ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e045"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e046ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e046"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/e047ImageView"
+            style="@style/ImageView.Face"
+            android:src="@mipmap/e047"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+</LinearLayout>

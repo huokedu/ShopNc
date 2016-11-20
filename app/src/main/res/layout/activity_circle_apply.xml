@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Linear">
+
+    <include
+        android:id="@+id/toolbarInclude"
+        style="@style/Include.Wrap"
+        layout="@layout/include_toolbar" />
+
+    <View style="@style/View.Line8" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:layout_height="80dip"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:layout_height="80dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="理由" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/pursuerEditText"
+            style="@style/EditText.EditInfo"
+            android:layout_height="80dip"
+            android:gravity="center_vertical"
+            android:hint="申请理由"
+            android:inputType="none" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line" />
+
+    <LinearLayout
+        style="@style/Layout.Tool"
+        android:layout_height="80dip"
+        android:padding="0dip">
+
+        <TextView
+            style="@style/TextView.ToolTitle"
+            android:layout_height="80dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="介绍" />
+
+        <View style="@style/View.LineHor" />
+
+        <EditText
+            android:id="@+id/descEditText"
+            style="@style/EditText.EditInfo"
+            android:layout_height="80dip"
+            android:gravity="center_vertical"
+            android:hint="自我介绍"
+            android:inputType="none" />
+
+    </LinearLayout>
+
+    <View style="@style/View.Line8" />
+
+    <TextView
+        android:id="@+id/applyTextView"
+        style="@style/TextView.Button1"
+        android:layout_margin="0dip"
+        android:text="加入圈子" />
+
+</LinearLayout>
